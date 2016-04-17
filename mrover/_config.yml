@@ -6,16 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: MRover
-email: mrover@umich.edu
+title: University of Michigan Mars Rover Team
+email: rover@umich.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The Michigan Mars Rover Team is the coolest team you have ever seen. We participate in activities such as rovering all over.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mrover.org" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: umrover
 
 # Build settings
 markdown: kramdown

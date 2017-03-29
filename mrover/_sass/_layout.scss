@@ -127,6 +127,18 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
+.tspos {
+	line-height:150px;
+	text-align:center;
+}
+
+.tspos .tspo-logo {
+	max-width:400px;
+	max-height:130px;
+	padding:10px 30px;
+	vertical-align:middle;
+}
+
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {

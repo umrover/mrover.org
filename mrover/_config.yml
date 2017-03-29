@@ -9,10 +9,14 @@
 title: University of Michigan Mars Rover Team
 email: rover@umich.edu
 description: > # this means to ignore newlines until "baseurl:"
-  The Michigan Mars Rover Team is the coolest team you have ever seen. We participate in activities such as rovering all over.
+    The Michigan Mars Rover Team is the coolest team you have ever seen. We participate in activities such as rovering all over.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mrover.org" # the base hostname & protocol for your site
 twitter_username: umrover
+
+# Our sponsors
+collections:
+    sponsors:
 
 # Build settings
 markdown: kramdown

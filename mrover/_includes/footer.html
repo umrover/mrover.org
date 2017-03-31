@@ -36,7 +36,7 @@
 		<!-- tspo used because adblock blocks the word sponsor -->
 		<div class="tspos">
 			{% for sponsor in site.sponsors %}
-				<a href="{{sponsor.url}}"><img src="{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
+				<a href="{{sponsor.rurl}}" target="_blank"><img src="{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
 			{% endfor %}
 		</div>
 	</div>

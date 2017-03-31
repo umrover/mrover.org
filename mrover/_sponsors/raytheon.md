@@ -1,6 +1,6 @@
 ---
 name: Raytheon
-image_path: /images/raytheon.png
-url: http://www.raytheon.com/
+image_path: images/raytheon.png
+rurl: http://www.raytheon.com/
 ---
 

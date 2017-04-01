@@ -10,4 +10,5 @@ inside of the `mrover` directory, and move the `_site` folder to `/docs`:
 
     mv _site ../docs
 
-
+### Note
+Do not edit the `/docs` folder directly. This is automatically generated.

@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>University of Michigan Mars Rover Team</title>
-    <description>The Michigan Mars Rover Team is the coolest team you have ever seen. We participate in activities such as rovering all over.
+    <description>The Michigan Mars Rover team (MRover) is a student-run, multidisciplinary organization whose mission is to design and build a rover for the exploration of extraterrestrial environments.  Our team consists of everyone from freshman to graduate students, representing majors from the College of Engineering and the College of Literature, Science, and the Arts.  We strive to inspire and educate students about space, Mars exploration, and engineering, and we focus on helping students grow as engineers. #The Michigan Mars Rover Team is the coolest team you have ever seen. We participate in activities such as rovering all over.
 </description>
     <link>http://mrover.org/</link>
     <atom:link href="http://mrover.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Apr 2018 13:00:18 -0400</pubDate>
-    <lastBuildDate>Tue, 17 Apr 2018 13:00:18 -0400</lastBuildDate>
+    <pubDate>Tue, 17 Apr 2018 15:13:40 -0400</pubDate>
+    <lastBuildDate>Tue, 17 Apr 2018 15:13:40 -0400</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
   </channel>

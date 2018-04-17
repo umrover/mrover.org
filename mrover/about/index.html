@@ -14,8 +14,22 @@ weight: 1
   <div class="row-container one">
     <div class="wrap">
       <div class="row-content text-content">
+        <p>
+        MRover's primary goal is to win the University Rover Challenge (URC). 
+        Student teams from all over the world compete in the URC to design and build the best rover for assisting future astronauts. 
+        The URC is hosted by The Mars Society, the largest advocacy group for the exploration and settlement of Mars, 
+        and it takes place at the Mars Research Station in the Utah Desert. 
+        The competition consists of four events:
+      </p>
+        <ul>
+          <li>Extreme Retirieval and Delivery - Traveling over tough terrain</li>
+          <li>Equipment Servicing - Manipulating a piece of equipment of a robotic arm</li>
+          <li>Science Cache - Acquiring soil from a chosen site and evaluating it for signs of life</li>
+          <li>Autonomous Navigation - Driving to GPS coordinates and searching for markers nearby.</li>
+        </ul>
 
-        MRover's main goal is to win the University Rover Challenge (URC). This competition has student teams from all over the world design and build a rover, which could be used on Mars to assist future astronauts. The URC is hosted by The Mars Society which involves teams of university students from around the world all competing for the title. The competition takes place at the Mars Research Station located in the Utah Desert. The terrain serves as a close match to that of the rocky Mars surface. The teams must be able to maneuver their rovers through the unpredictable terrain using only the cameras on their rovers.
+        The teams must be able to maneuver their rovers through the unpredictable, rocky terrain using only the cameras on their rovers, simulating the experience of driving a rover on Mars.
+        In light of recent interest in autonomy, the URC implemented an autonomous navigation task in 2017, adding an additional software challenge to the competition.
 
       </div>
       <div class="row-content"></div>
@@ -26,66 +40,195 @@ weight: 1
   </div>
   <div class="row-container info-row-container">
     <div class="wrap">
-      <div class="info-section">
-        <div class="info-block" style="background-image: url('chassis.jpg');"></div>
-        <div class="info-content">
-          <h4>Chassis and Suspension</h4>
-          This year's rover features a carbon fiber chassis and rocker-bogie design, a passive suspension system, which ensures a neutral chassis angle and contact between all six wheels and the ground. A mechanical hard stop has also been implemented to prevent bogie inverse, a common issue with this type of suspension system.
+      <div class="subrow one-of-two-subrows"> <!-- Subrow contains two elements. Prevents glitches that occur when two info-sections of different heights are next to each other without a subrow -->
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('arm.jpg');"></div>
+          <div class="info-content">
+            <h4>Robotic Arm</h4>
+            With six degrees of freedom, our robotic arm can operate switches, turn valves, and type on a keyboard.
+            It is also designed to pick up equipment to assist astronauts.
+            We are experimenting with innovative hand designs using 3D printing and silicone molding. 
 
+          </div>
+        </div>
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('soil.jpg');"></div>
+          <div class="info-content">
+            <h4>Soil Acquisition</h4>
+            This subsystem must be able to drill several inches into the dry Utah soil and acquire a soil sample for further testing.
+            It features a percussion system for breaking up the ground and an actuated opening in the drill for storing soil.
+
+            
+
+          </div>
         </div>
       </div>
-      <div class="info-section">
-        <div class="info-block" style="background-image: url('arm.jpg');"></div>
-        <div class="info-content">
-          <h4>Robotic Arm</h4>
-          One of the more versatile components of the rover is the robotic arm. With six degrees of freedom, the arm is capable of completing complicated motion trajectories, and can operate switches, turn valves, and connect tow carabiners, among other assistant-related tasks. It can also lift over 5 kg worth of tools and equipment.
-
+      <div class="subrow one-of-two-subrows">
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('chassis.jpg');"></div>
+          <div class="info-content">
+            <h4>Chassic and Mounts</h4>
+            Our rovers feature a carbon fiber chassis with a modular mounting system, allowing us to configure our subsystems differently for each task.
+            This subteam is also responsible for creating the mounts for the many cameras on our rover and for creating the camera mast.
+            
+            
+          </div>
         </div>
-      </div>
-      <div class="info-section">
-        <div class="info-block" style="background-image: url('soil.jpg');"></div>
-        <div class="info-content">
-          <h4>Soil Sample Return</h4>
-          As the most diverse subteam, they combine their design ingenuity with their geological expertise to navigate the competition in search of evidence of life. Using satellite imagery and surveys of the area, they have created maps of different soil properties and have used these to find several sights with signs of recent water erosion.
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('mobility.jpg');"></div>
+          <div class="info-content">
+            <h4>Mobility</h4>
+            The mobility subteam is reponsible for designing the drive and suspension subsystems.
+            We recently transitioned from a six-wheeled "rocker-bogie" design to a new four-wheeled design that allows for faster travel.
+            Our most recent design features four independent shock absorbers and a differntial bar.
 
-        </div>
-      </div>
-      <div class="info-section">
-        <div class="info-block" style="background-image: url('steering.jpg');"></div>
-        <div class="info-content">
-          <h4>Steering and Drive</h4>
-          Our six independently-drive wheels feature in-hub motors in order to increase the rover's ground clearance and utilize skid steering to allow for zero-radius turning. The wheels consist of a polyethylene hub with a polyurethane foam and rubber layer to decrease impact forces and increase traction with the ground.
-
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="section-divider">
+    <h3>Software Team</h3>
+  </div>
+  <div class="row-container info-row-container">
+    <div class="wrap">
+      <div class="subrow one-of-two-subrows">
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('autonomous.png');"></div>
+          <div class="info-content">
+            <h4>Autonomus Navigation</h4>
+            Our autonomous navigation subteam develops several layers of code that allow the robot to navigate to GPS coordinates, 
+            plot paths around obstacles, and search for markers set out by the URC. They also develop simulatorsto rapidly test their software.
+
+
+          </div>
+        </div>
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('vision.jpg');"></div>
+          <div class="info-content">
+            <h4>Computer Vision</h4>
+            A key part of the autonomous navigation task is being able to identify markers and obstacles and doing so from as far away as possible.
+            Our computer vision subteam deals with this task, working closely with the autonomus navigation subteam.
+          </div>
+        </div>
+      </div>
+      <div class="subrow one-of-two-subrows">
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('teleop.jpg');"></div>
+          <div class="info-content">
+            <h4>Teleoperated Control</h4>
+            Devising a control scheme of a rover with this many moving parts is no easy task.
+            Teleoperated Control develops the control schemes for each rover subsystem as well as the GUI for the base station.
+
+          </div>
+        </div>
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('hardwareInterface.jpg ');"></div>
+          <div class="info-content">
+            <h4>Hardware Interface</h4>
+            Our hardware interface subteam writes low level code such as drivers to make sure all
+            the features of our many pieces of hardware can be accessed in software.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="section-divider">
     <h3>Electrical Team</h3>
   </div>
-  <div class="row-container info-row-container row-electrical">
+  <div class="row-container info-row-container">
     <div class="wrap">
-      <div class="info-section">
-        <div class="info-block" style="background-image: url('communication.jpg');"></div>
-        <div class="info-content">
-          <h4>Integrated Control</h4>
-          Integrated control is responsible for the distribution, and consumption analysis of power on the rover, as well as designing and implementing circuitry to make functioning sensors.
+      <div class="subrow one-of-two-subrows">
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('logicbox.jpg');"></div>
+          <div class="info-content">
+            <h4>Logic Box</h4>
+            Our logic box contains all of our central computing equipment, including a Jetson TX2 for the central computing, 
+            Raspberry Pi Zeroes for computer vision, and custom PCBs for edge computing.
 
+
+          </div>
+        </div>
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('powerbox.jpg');"></div>
+          <div class="info-content">
+            <h4>Power Box</h4>
+            Our power box houses our power distribution panel and all our motor controllers. 
+            It must be cooled extensively to prevent problems in the desert heat.
+          </div>
         </div>
       </div>
-      <div class="info-section">
-        <div class="info-block" style="background-image: url('commanddata.jpg');"></div>
-        <div class="info-content">
-          <h4>Command and Data</h4>
-          This subsystem is responsible for developing a low-latency command interpreter to perform tasks that are directed by the base station and forwarding data from scientific sensors to the base station. We have two programs, one for the rover and one for the base station.
 
+      <div class="subrow one-of-two-subrows">
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('customPCB.jpg');"></div>
+          <div class="info-content">
+            <h4>Custom PCB Design</h4>
+            When off-the-shelf circuits won't cut it, we use Autodesk Eagle to design our own circuit boards.
+            We then have our circuits printed so we can assemble the boards and intstall them on the rover.
+
+          </div>
+        </div>
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('comms.jpg ');"></div>
+          <div class="info-content">
+            <h4>Communications</h4>
+            No event of the URC is possible without a strong wireless connection between the rover and the base station.
+            The team members dealing with communications must work closely with the software team.
+
+          </div>
         </div>
       </div>
-      <div class="info-section">
-        <div class="info-block" style="background-image: url('communication.jpg');"></div>
-        <div class="info-content">
-          <h4>Communication</h4>
-          This subsystem is responsible for designing an efficient communications protocol enabling the rover and base station to send each other commands, status updates, and video.
+    </div>
+  </div>
+
+  <div class="section-divider">
+    <h3>Science Team</h3>
+  </div>
+  <div class="row-container info-row-container">
+    <div class="wrap">
+      <div class="subrow one-of-two-subrows">
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('offboardTests.jpg');"></div>
+          <div class="info-content">
+            <h4>Offboard Tests</h4>
+            The offboard tests are conducted in a laboratory setting and are used to find biomolecules, such as active carbon and carbohydrates.
+            Prior to the competition, the Science Team must develop and practice procedures for testing the rover's soil sample.
+
+
+          </div>
+        </div>
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('onboardTests.jpg');"></div>
+          <div class="info-content">
+            <h4>Onboard Tests</h4>
+            The science team is reponsible for selecting the onboard tests, which are probes mounted on the rover that characterize different aspects 
+            of the environment, such as soil moisture levels and temperature. 
+          </div>
+        </div>
+      </div>
+
+      <div class="subrow one-of-two-subrows">
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('siteSelection.jpg');"></div>
+          <div class="info-content">
+            <h4>Site Selection</h4>
+            Using satellite imagery and surveys of the area, the science team creates maps of different soil properties.
+            These maps are used to select the site form which the rover will take its soil sample.
+
+          </div>
+        </div>
+        <div class="info-section">
+          <div class="info-block" style="background-image: url('sciencePresentation.jpg ');"></div>
+          <div class="info-content">
+            <h4>Report and Presentation</h4>
+            The URC stipulates that we send a report demonstrating our knowledge of Mars prior to the 
+            competition and present our findings from the tests we perform at the competition. The science team is responsible
+            for these two tasks as well.
+
+          </div>
         </div>
       </div>
     </div>

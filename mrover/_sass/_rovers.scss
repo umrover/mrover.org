@@ -1,0 +1,145 @@
+/******************************************************************
+Author: Michael Wolf
+Modified version of Home Page stylesheet
+
+Stylesheet: Home Page
+******************************************************************/
+
+.rovers-page {
+    .hero {
+      background-image: url("images/rovers-bg.JPG");
+      background-position: 20% 58%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .row-container {
+  
+      &.two, &.four {
+        background-color: #ecf0f1;
+        .text-content {
+          padding-right: 0;
+          padding-left: 60px;
+        }
+      }
+  
+      &.three {
+        background-color: white;
+      }
+  
+      &.one, &.two, &.three, &.four {
+        @media (max-width: 768px) {
+          .row-content {
+            display: table-header-group;
+          }
+          .text-content {
+            display: table-footer-group;
+            margin: 0 10px;
+          }
+        }
+      }
+  
+      .wrap {
+        display: table;
+        max-width: 800px;
+        width: 90%;
+        margin: 0 auto;
+      }
+  
+      .row-content {
+        display:table-cell;
+        vertical-align: middle;
+  
+        @media (max-width: 768px) {
+          display: block;
+          margin: 0 auto;
+          width: 75%;
+        }
+      }
+  
+      .text-content {
+        padding: 50px 0;
+        padding-right: 60px;
+  
+        h4 {
+          font-size: 24px;
+          margin: 0;
+        }
+  
+        @media (max-width: 768px) {
+          padding-right: 0;
+          padding-left: 0 !important;
+        }
+      }
+  
+      .block {
+        width: 320px;
+        height: 200px;
+        background-color: #2c3e50;
+        background-size: cover;
+  
+        &.one {
+          //background-image: url("images/rovers/phoebe.jpg");
+        }
+  
+        &.two {
+          background-image: url("images/rovers/2017.JPG");
+        }
+  
+        &.three {
+          background-image: url("images/rovers/2016.jpg");
+        }
+
+        &.four {
+          background-image: url("images/team-old-downscaled.jpg");
+          background-size: cover;
+        }
+  
+        @media (max-width: 768px) {
+          display: block;
+          margin: 30px auto;
+          float: none;
+          width: 300px;
+          height: 187px;
+        }
+      }
+    }
+  
+    .join-donate-cta {
+      background-color: #ecf0f1;
+      .cta {
+        width: 50%;
+        text-align: center;
+        padding: 40px 0;
+        float: left;
+  
+        h6 {
+          font-size: 24px;
+          margin: 0;
+        }
+  
+        p {
+          width: 80%;
+          margin: 10px auto 20px auto;
+          max-width: 400px;
+        }
+  
+        @media (max-width: 768px) {
+          width: 92%;
+          float: none;
+          margin: 0 auto;
+        }
+      }
+    }
+    
+    .join-donate-cta .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        clear: both;
+        
+        @extend %clearfix;
+    }
+  
+  
+  }
+  

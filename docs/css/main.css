@@ -9,6 +9,15 @@ COLORS
     max-width: 400px;
     color: white;
     padding: 80px 0; }
+  @media (max-width: 700px) {
+    .hero {
+      height: 300px; } }
+  @media (min-width: 1400px) {
+    .hero {
+      height: 500px; } }
+  @media (min-width: 1800px) {
+    .hero {
+      height: 600px; } }
 
 .section-divider {
   width: 100%;
@@ -139,7 +148,7 @@ pre {
 /**
  * Wrapper
  */
-.wrapper {
+.wrapper, .social-media-wrapper {
   max-width: -webkit-calc(1200px - (30px * 2));
   max-width: calc(1200px - (30px * 2));
   margin-right: auto;
@@ -147,16 +156,28 @@ pre {
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
-    .wrapper {
+    .wrapper, .social-media-wrapper {
       max-width: -webkit-calc(1200px - (30px));
       max-width: calc(1200px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
 
+.social-media-wrapper {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 30px; }
+  .social-media-wrapper a {
+    text-decoration: none;
+    color: inherit; }
+
 /**
  * Clearfix
  */
-.wrapper:after, .home .join-donate-cta .wrap:after, .footer-col-wrapper:after {
+.wrapper:after, .social-media-wrapper:after, .home .join-donate-cta .wrap:after, .footer-col-wrapper:after, .rovers-page .join-donate-cta .wrap:after {
   content: "";
   display: table;
   clear: both; }
@@ -202,6 +223,27 @@ pre {
     fill: #828282; }
 
 /**
+ * Font-awesome icons
+ */
+.fa {
+  color: inherit;
+  text-decoration: none; }
+
+.fa-instagram {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 2px 5px 2px 5px; }
+  .fa-instagram:hover {
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    color: white; }
+
+.fa-twitter:hover {
+  color: #00aced; }
+
+.fa-youtube-play:hover {
+  color: #bb0000; }
+
+/**
  * Site header
  */
 .site-header {
@@ -215,7 +257,7 @@ pre {
     font-size: 18px;
     text-transform: uppercase;
     color: #323944;
-    margin-right: 28px; }
+    margin-right: 20px; }
     .site-header .trigger a:hover, .site-header .trigger a:focus {
       color: #F8C726;
       text-decoration: none; }
@@ -231,63 +273,70 @@ Author: Connor Krupp
 Stylesheet: Home Page
 ******************************************************************/
 .home .hero {
+  background-image: url("images/home-bg.JPG");
+  background-position: 20% 58%;
+  /*
   background-image: url("images/team.jpg");
-  background-repeat: no-repeat;
   background-position: 20%;
+  */
+  background-repeat: no-repeat;
   background-size: cover; }
-.home .row-container.two {
-  background-color: #ecf0f1; }
-  .home .row-container.two .text-content {
-    padding-right: 0;
-    padding-left: 60px; }
-.home .row-container.three {
-  background-color: white; }
-@media (max-width: 768px) {
-  .home .row-container.one .row-content, .home .row-container.two .row-content, .home .row-container.three .row-content {
-    display: table-header-group; }
-  .home .row-container.one .text-content, .home .row-container.two .text-content, .home .row-container.three .text-content {
-    display: table-footer-group;
-    margin: 0 10px; } }
-.home .row-container .wrap {
-  display: table;
-  max-width: 800px;
-  width: 90%;
-  margin: 0 auto; }
-.home .row-container .row-content {
-  display: table-cell;
-  vertical-align: middle; }
-  @media (max-width: 768px) {
-    .home .row-container .row-content {
-      display: block;
-      margin: 0 auto;
-      width: 75%; } }
-.home .row-container .text-content {
-  padding: 50px 0;
-  padding-right: 60px; }
-  .home .row-container .text-content h4 {
-    font-size: 24px;
-    margin: 0; }
-  @media (max-width: 768px) {
-    .home .row-container .text-content {
+.home .row-container {
+  padding: 10px 0px; }
+  .home .row-container.two {
+    background-color: #ecf0f1; }
+    .home .row-container.two .text-content {
       padding-right: 0;
-      padding-left: 0 !important; } }
-.home .row-container .block {
-  width: 320px;
-  height: 200px;
-  background-color: #2c3e50; }
-  .home .row-container .block.one {
-    background-image: url("images/shop.jpg"); }
-  .home .row-container .block.two {
-    background-image: url("images/rover.jpg"); }
-  .home .row-container .block.three {
-    background-image: url("images/campus.jpg"); }
+      padding-left: 60px; }
+  .home .row-container.three {
+    background-color: white; }
   @media (max-width: 768px) {
-    .home .row-container .block {
-      display: block;
-      margin: 30px auto;
-      float: none;
-      width: 300px;
-      height: 187px; } }
+    .home .row-container.one .row-content, .home .row-container.two .row-content, .home .row-container.three .row-content {
+      display: table-footer-group; }
+    .home .row-container.one .text-content, .home .row-container.two .text-content, .home .row-container.three .text-content {
+      display: table-header-group;
+      margin: 0px 10px; } }
+  .home .row-container .wrap {
+    display: table;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto; }
+  .home .row-container .row-content {
+    display: table-cell;
+    vertical-align: middle; }
+    @media (max-width: 768px) {
+      .home .row-container .row-content {
+        display: block;
+        margin: 0 auto;
+        width: 75%; } }
+  .home .row-container .text-content {
+    padding: 40px 0;
+    padding-right: 60px; }
+    .home .row-container .text-content h4 {
+      font-size: 24px;
+      margin: 0; }
+    @media (max-width: 768px) {
+      .home .row-container .text-content {
+        padding-right: 0;
+        padding-left: 0 !important; } }
+  .home .row-container .block {
+    width: 320px;
+    height: 200px;
+    background-color: #2c3e50;
+    background-size: cover; }
+    .home .row-container .block.one {
+      background-image: url("images/team.jpg"); }
+    .home .row-container .block.two {
+      background-image: url("images/whatwedo.jpg"); }
+    .home .row-container .block.three {
+      background-image: url("images/campus.jpg"); }
+    @media (max-width: 768px) {
+      .home .row-container .block {
+        display: block;
+        margin: 30px auto;
+        float: none;
+        width: 300px;
+        height: 187px; } }
 .home .join-donate-cta {
   background-color: #ecf0f1; }
   .home .join-donate-cta .cta {
@@ -343,63 +392,75 @@ Author: Connor Krupp
 Stylesheet: Front Page Stylesheet
 ******************************************************************/
 .about-page .hero {
-  background-image: url("images/about-bg.jpg");
+  background-image: url("images/station-cropped.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 45%;
   background-size: cover; }
-@media (max-width: 720px) {
-  .about-page .row-container.one .text-content {
-    display: table-footer-group; }
-  .about-page .row-container.one .block {
-    margin: 30px auto; } }
-.about-page .row-container.two {
-  background-color: #ecf0f1; }
-  .about-page .row-container.two .text-content {
-    padding-right: 0;
-    padding-left: 60px; }
-.about-page .row-container.three {
-  background-color: #bdc3c7; }
-.about-page .row-container .wrap {
-  display: table;
-  max-width: 800px; }
-.about-page .row-container .row-content {
-  display: table-cell;
-  vertical-align: middle; }
-.about-page .row-container .text-content {
-  padding: 50px 0;
-  padding-right: 60px; }
-.about-page .row-container .block {
-  width: 320px;
-  height: 200px;
-  background-color: #2c3e50; }
-.about-page .row-container .info-section {
-  width: 25%;
-  text-align: center;
-  float: left;
-  padding: 30px 0; }
-  .about-page .row-container .info-section h4 {
-    font-size: 1.1em;
-    font-weight: 700; }
-  .about-page .row-container .info-section .info-content {
-    padding: 0 20px; }
-  .about-page .row-container .info-section .info-block {
-    margin: 0 auto;
-    width: 160px;
-    height: 120px;
+.about-page .row-container {
+  padding: 10px; }
+  @media (max-width: 720px) {
+    .about-page .row-container.one .text-content {
+      display: table-footer-group; }
+    .about-page .row-container.one .block {
+      margin: 30px auto; } }
+  .about-page .row-container.two {
+    background-color: #ecf0f1; }
+    .about-page .row-container.two .text-content {
+      padding-right: 0;
+      padding-left: 60px; }
+  .about-page .row-container.three {
+    background-color: #bdc3c7; }
+  .about-page .row-container .wrap {
+    display: table;
+    max-width: 800px; }
+  .about-page .row-container .row-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left; }
+  .about-page .row-container .text-content {
+    padding: 40px 0;
+    padding-right: 60px; }
+  .about-page .row-container .block {
+    width: 320px;
+    height: 200px;
     background-color: #2c3e50; }
-  @media (max-width: 780px) {
-    .about-page .row-container .info-section {
-      width: 50%; } }
-  @media (max-width: 500px) {
-    .about-page .row-container .info-section {
-      width: 100%; } }
+  .about-page .row-container .info-section, .about-page .row-container .subrow {
+    width: 50%;
+    text-align: center;
+    float: left;
+    padding: 30px 0; }
+    .about-page .row-container .info-section h4, .about-page .row-container .subrow h4 {
+      font-size: 1.1em;
+      font-weight: 700; }
+    .about-page .row-container .info-section .info-content, .about-page .row-container .subrow .info-content {
+      padding: 10px 30px; }
+    .about-page .row-container .info-section .info-block, .about-page .row-container .subrow .info-block {
+      margin: 0 auto;
+      width: 160px;
+      height: 120px;
+      background-color: #2c3e50;
+      background-image: url("images/160x120.png");
+      background-size: cover; }
+    @media (max-width: 620px) {
+      .about-page .row-container .info-section, .about-page .row-container .subrow {
+        width: 100%; } }
+  .about-page .row-container .subrow {
+    text-align: center;
+    float: left;
+    width: 50%;
+    padding: 0px;
+    margin: 0px; }
+  .about-page .row-container .one-of-two-subrows {
+    width: 50%; }
+    @media (max-width: 1280px) {
+      .about-page .row-container .one-of-two-subrows {
+        width: 100%; } }
+  .about-page .row-container .one-of-one-subrow {
+    width: 100%; }
 .about-page .info-row-container .wrap {
-  max-width: 1000px; }
-.about-page .row-electrical .info-section {
-  width: 33%; }
-  .about-page .row-electrical .info-section .info-content {
-    width: 70%;
-    margin: 0 auto; }
+  max-width: 1300px; }
+.about-page .row-electrical {
+  width: 50%; }
 
 .site-title {
   font-size: 26px;
@@ -421,7 +482,7 @@ Stylesheet: Front Page Stylesheet
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 780px) {
     .site-nav {
       position: absolute;
       top: 34px;
@@ -459,8 +520,7 @@ Stylesheet: Front Page Stylesheet
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  padding: 0; }
 
 .footer-heading {
   font-size: 18px;
@@ -512,7 +572,7 @@ Stylesheet: Front Page Stylesheet
   .footer-col-3 {
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 780px) {
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
@@ -709,3 +769,119 @@ Stylesheet: Front Page Stylesheet
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+/******************************************************************
+Author: Michael Wolf
+Modified verison of Contact page
+
+Stylesheet: Join Page Stylesheet
+******************************************************************/
+.join-page {
+  text-align: center;
+  padding-bottom: 30px; }
+  .join-page .hero {
+    background-image: url("images/join-bg.JPG");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover; }
+  .join-page h4 {
+    font-size: 24px; }
+  .join-page h6 {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 24px; }
+  .join-page p {
+    margin: 0; }
+  .join-page a {
+    font-size: 16px;
+    text-decoration: none; }
+
+/******************************************************************
+Author: Michael Wolf
+Modified version of Home Page stylesheet
+
+Stylesheet: Home Page
+******************************************************************/
+.rovers-page .hero {
+  background-image: url("images/rovers-bg.JPG");
+  background-position: 20% 58%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+.rovers-page .row-container.two, .rovers-page .row-container.four {
+  background-color: #ecf0f1; }
+  .rovers-page .row-container.two .text-content, .rovers-page .row-container.four .text-content {
+    padding-right: 0;
+    padding-left: 60px; }
+.rovers-page .row-container.three {
+  background-color: white; }
+@media (max-width: 768px) {
+  .rovers-page .row-container.one .row-content, .rovers-page .row-container.two .row-content, .rovers-page .row-container.three .row-content, .rovers-page .row-container.four .row-content {
+    display: table-header-group; }
+  .rovers-page .row-container.one .text-content, .rovers-page .row-container.two .text-content, .rovers-page .row-container.three .text-content, .rovers-page .row-container.four .text-content {
+    display: table-footer-group;
+    margin: 0 10px; } }
+.rovers-page .row-container .wrap {
+  display: table;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto; }
+.rovers-page .row-container .row-content {
+  display: table-cell;
+  vertical-align: middle; }
+  @media (max-width: 768px) {
+    .rovers-page .row-container .row-content {
+      display: block;
+      margin: 0 auto;
+      width: 75%; } }
+.rovers-page .row-container .text-content {
+  padding: 50px 0;
+  padding-right: 60px; }
+  .rovers-page .row-container .text-content h4 {
+    font-size: 24px;
+    margin: 0; }
+  @media (max-width: 768px) {
+    .rovers-page .row-container .text-content {
+      padding-right: 0;
+      padding-left: 0 !important; } }
+.rovers-page .row-container .block {
+  width: 320px;
+  height: 200px;
+  background-color: #2c3e50;
+  background-size: cover; }
+  .rovers-page .row-container .block.two {
+    background-image: url("images/rovers/2017.JPG"); }
+  .rovers-page .row-container .block.three {
+    background-image: url("images/rovers/2016.jpg"); }
+  .rovers-page .row-container .block.four {
+    background-image: url("images/team-old-downscaled.jpg");
+    background-size: cover; }
+  @media (max-width: 768px) {
+    .rovers-page .row-container .block {
+      display: block;
+      margin: 30px auto;
+      float: none;
+      width: 300px;
+      height: 187px; } }
+.rovers-page .join-donate-cta {
+  background-color: #ecf0f1; }
+  .rovers-page .join-donate-cta .cta {
+    width: 50%;
+    text-align: center;
+    padding: 40px 0;
+    float: left; }
+    .rovers-page .join-donate-cta .cta h6 {
+      font-size: 24px;
+      margin: 0; }
+    .rovers-page .join-donate-cta .cta p {
+      width: 80%;
+      margin: 10px auto 20px auto;
+      max-width: 400px; }
+    @media (max-width: 768px) {
+      .rovers-page .join-donate-cta .cta {
+        width: 92%;
+        float: none;
+        margin: 0 auto; } }
+.rovers-page .join-donate-cta .wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  clear: both; }

@@ -6,13 +6,18 @@ Stylesheet: Home Page
 
 .home {
   .hero {
+    background-image: url("images/home-bg.JPG");
+    background-position: 20% 58%;
+    /*
     background-image: url("images/team.jpg");
-    background-repeat: no-repeat;
     background-position: 20%;
+    */
+    background-repeat: no-repeat;
     background-size: cover;
   }
 
   .row-container {
+    padding: 10px 0px;
 
     &.two {
       background-color: #ecf0f1;
@@ -29,11 +34,11 @@ Stylesheet: Home Page
     &.one, &.two, &.three {
       @media (max-width: 768px) {
         .row-content {
-          display: table-header-group;
+          display: table-footer-group;
         }
         .text-content {
-          display: table-footer-group;
-          margin: 0 10px;
+          display: table-header-group;
+          margin: 0px 10px;
         }
       }
     }
@@ -57,7 +62,7 @@ Stylesheet: Home Page
     }
 
     .text-content {
-      padding: 50px 0;
+      padding: 40px 0;
       padding-right: 60px;
 
       h4 {
@@ -75,13 +80,14 @@ Stylesheet: Home Page
       width: 320px;
       height: 200px;
       background-color: #2c3e50;
+      background-size: cover;
 
       &.one {
-        background-image: url("images/shop.jpg");
+        background-image: url("images/team.jpg");
       }
 
       &.two {
-        background-image: url("images/rover.jpg");
+        background-image: url("images/whatwedo.jpg");
       }
 
       &.three {

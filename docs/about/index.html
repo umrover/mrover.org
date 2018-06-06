@@ -25,8 +25,17 @@
   <link rel="icon" type="image/png" href="favicon-128x128.png" sizes="128x128" />
   -->
 
+  <!-- Link to webmanifest so that icons behave properly on Android-->
+
   <!-- link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
   <link rel="shortcut icon" type="image/x-icon" href="http://mrover.org/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://mrover.org/icons/apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="http://mrover.org/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://mrover.org/icons/favicon-16x16.png">
+
+  <!-- Include the google analytics scripts if we are in the production environment (automatimcally activates when hosted on Github Pages)-->
+  
   
 </head>
  
@@ -343,7 +352,11 @@
         
         
           
+          <a class="page-link" href="../css/main.css"></a>
+          
         
+          
+          <a class="page-link" href="../feed.xml"></a>
           
         
           
@@ -356,6 +369,8 @@
         
           
           <a class="page-link" href="../rovers/">Rovers</a>
+          
+        
           
         
           
@@ -439,7 +454,7 @@
           <div class="info-content">
             <h4>Chassic and Mounts</h4>
             Our rovers feature a carbon fiber chassis with a modular mounting system, allowing us to optimize our subsystem configuration for each task.
-            This subteam is also responsible for creating camera mast and various mounts for the other cameras on our rover.
+            This subteam is also responsible for creating the camera mast and various mounts for the other cameras on our rover.
             
             
           </div>
@@ -478,8 +493,8 @@
           <div class="info-block" style="background-image: url('vision.jpg');"></div>
           <div class="info-content">
             <h4>Computer Vision</h4>
-            A key part of the autonomous navigation task is being able to identify markers and obstacles and doing so from as far away as possible.
-            Our computer vision subteam deals with this task, working closely with the autonomous navigation subteam.
+            A key part of the autonomous navigation task is being able to identify markers and obstacles and doing so from as far away as possible. 
+            Our computer vision subteam deals with this task, using a stereoscopic camera in addition to the rover’s other cameras.
           </div>
         </div>
       </div>
@@ -488,7 +503,7 @@
           <div class="info-block" style="background-image: url('teleop.jpg');"></div>
           <div class="info-content">
             <h4>Teleoperated Control</h4>
-            Devising a control scheme of a rover with this many moving parts is no easy task.
+            Devising a control scheme of a rover with so many moving parts is no easy task.
             Teleoperated Control develops the control schemes for each rover subsystem as well as the GUI for the base station.
 
           </div>
@@ -497,7 +512,7 @@
           <div class="info-block" style="background-image: url('hardwareInterface.jpg ');"></div>
           <div class="info-content">
             <h4>Hardware Interface</h4>
-            Our hardware interface subteam writes low level code such as drivers to make sure all
+            Our hardware interface subteam writes drivers and other low-level code to make sure all
             the features of our many pieces of hardware can be accessed in software.
           </div>
         </div>
@@ -612,7 +627,7 @@
 	<div class="social-media-wrapper" >
 
 		<a class="fa fa-twitter" target="_blank" href="https://twitter.com/umrover"></a>
-		<a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/umroverteam/" style="margin-right: 3px" ></a>
+		<a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/umrover/" style="margin-right: 3px" ></a>
 		<a class="fa fa-youtube-play" target="_blank" href="https://www.youtube.com/watch?v=qf73hYbMD3A"></a>
 		
 	</div>
@@ -622,20 +637,82 @@
 		<!-- tspo used because adblock blocks the word sponsor -->
 		<div class="tspos">
 			
-				<a href="http://4pcb.com" target="_blank"><img src="../images/advanced_circuits.png" alt="Advanced Circuits logo" class="tspo-logo" /></a>
 			
-				<a href="https://www.delphi.com" target="_blank"><img src="../images/delphi.png" alt="Delphi Automotive logo" class="tspo-logo" /></a>
+				<div class="tspo-container"> 
+					<a href="http://www.engin.umich.edu/" target="_blank"><img src="../sponsorImages/coe.png" alt="College of Engineering logo" class="tspo-logo" /></a>
+				</div>
 			
-				<a href="http://www.midwestmotion.com/" target="_blank"><img src="../images/midwest_motion.png" alt="Midwest Motion logo" class="tspo-logo" /></a>
+				<div class="tspo-container"> 
+					<a href="https://www.zf.com/" target="_blank"><img src="../sponsorImages/ZF.png" alt="ZF logo" class="tspo-logo" /></a>
+				</div>
 			
-				<a href="http://www.protocase.com/" target="_blank"><img src="../images/protocase.png" alt="Protocase logo" class="tspo-logo" /></a>
+				<div class="tspo-container"> 
+					<a href="http://clasp.engin.umich.edu/" target="_blank"><img src="../sponsorImages/clasp.png" alt="Clasp logo" class="tspo-logo" /></a>
+				</div>
 			
-				<a href="http://www.raytheon.com/" target="_blank"><img src="../images/raytheon.png" alt="Raytheon logo" class="tspo-logo" /></a>
+				<div class="tspo-container"> 
+					<a href="https://ece.umich.edu/" target="_blank"><img src="../sponsorImages/ece.png" alt="Umich Electrical and Computer Engineering logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="https://aero.engin.umich.edu/" target="_blank"><img src="../sponsorImages/aero.jpg" alt="Umich Aerospace Engineering logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="https://cse.umich.edu/" target="_blank"><img src="../sponsorImages/cse2.png" alt="Umich Computer Science Engineering logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="https://www.delphi.com" target="_blank"><img src="../sponsorImages/delphi.png" alt="Delphi Automotive logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="https://me.engin.umich.edu/" target="_blank"><img src="../sponsorImages/me.jpg" alt="Umich Mechanical Engineering logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="http://gablemfg.com/" target="_blank"><img src="../sponsorImages/gable.png" alt="Gable Manuyfacturing logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="https://www.ford.com/" target="_blank"><img src="../sponsorImages/ford.png" alt="Ford logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="https://esg.engin.umich.edu/" target="_blank"><img src="../sponsorImages/esg.jpg" alt="Umich Engineering Student Government logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="https://lsa.umich.edu/physics" target="_blank"><img src="../sponsorImages/lsaphysics.png" alt="Umich LSA Physics logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="http://www.midwestmotion.com/" target="_blank"><img src="../sponsorImages/midwest_motion.png" alt="Midwest Motion logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="about:blank" target="_blank"><img src="../sponsorImages/plainfield.png" alt="Plainfield Metal Processing logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="http://www.protocase.com/" target="_blank"><img src="../sponsorImages/protocase.png" alt="Protocase logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="https://www.clearwatercomposites.com/" target="_blank"><img src="../sponsorImages/clearwater.png" alt="Clearwater Composites logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="http://www.raytheon.com/" target="_blank"><img src="../sponsorImages/raytheon.png" alt="Raytheon logo" class="tspo-logo" /></a>
+				</div>
+			
+				<div class="tspo-container"> 
+					<a href="http://4pcb.com" target="_blank"><img src="../sponsorImages/advanced_circuits.png" alt="Advanced Circuits logo" class="tspo-logo" /></a>
+				</div>
 			
 		</div>
 	</div>
 </footer>
-
 
   </body>
 

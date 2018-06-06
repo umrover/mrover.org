@@ -16,7 +16,7 @@
       <div class="trigger">
         {% assign pages = site.pages | sort:"weight"  %}
         {% for my_page in pages %}
-          {% if my_page.title %}
+          {% if my_page.hideInHeader == false or my_page.hideInHeader == null %}
           <a class="page-link" href="{{ my_page.url | remove_first: '/' | prepend: base }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}

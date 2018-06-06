@@ -1,6 +1,7 @@
 ---
 name: Raytheon
-image_path: images/raytheon.png
+image_path: sponsorImages/raytheon.png
 rurl: http://www.raytheon.com/
+level: 1
 ---
 

@@ -128,14 +128,22 @@
 
 .tspos {
 	line-height:150px;
-	text-align:center;
+    text-align:center;
+    //margin:auto; //center
+    width: 100%;
+}
+
+.tspo-container {
+	max-width:200px;
+	max-height:200px;
+	padding:10px 30px;
+    //vertical-align:middle;
+    display:inline-block;
 }
 
 .tspos .tspo-logo {
-	max-width:400px;
-	max-height:130px;
-	padding:10px 30px;
-	vertical-align:middle;
+    height:auto;
+    width: 100% ;
 }
 
 @include media-query($on-laptop) {

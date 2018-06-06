@@ -247,7 +247,6 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
   padding: 20px;
@@ -551,13 +550,18 @@ Stylesheet: Front Page Stylesheet
 
 .tspos {
   line-height: 150px;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+
+.tspo-container {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 10px 30px;
+  display: inline-block; }
 
 .tspos .tspo-logo {
-  max-width: 400px;
-  max-height: 130px;
-  padding: 10px 30px;
-  vertical-align: middle; }
+  height: auto;
+  width: 100%; }
 
 @media screen and (max-width: 800px) {
   .footer-col-1,
@@ -881,3 +885,29 @@ Stylesheet: Home Page
   max-width: 900px;
   margin: 0 auto;
   clear: both; }
+
+/******************************************************************
+Author: Michael Wolf
+Modified verison of Contact page
+
+Stylesheet: Sponsors Page Stylesheet
+******************************************************************/
+.join-page {
+  text-align: center;
+  padding-bottom: 30px; }
+  .join-page .hero {
+    background-image: url("images/join-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover; }
+  .join-page h4 {
+    font-size: 24px; }
+  .join-page h6 {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 24px; }
+  .join-page p {
+    margin: 0; }
+  .join-page a {
+    font-size: 16px;
+    text-decoration: none; }

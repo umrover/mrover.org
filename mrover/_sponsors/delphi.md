@@ -1,6 +1,7 @@
 ---
 name: Delphi Automotive
-image_path: images/delphi.png
+image_path: sponsorImages/delphi.png
 rurl: https://www.delphi.com
+level: 2
 ---
 

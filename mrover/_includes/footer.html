@@ -3,7 +3,7 @@
 	<div class="social-media-wrapper" >
 
 		<a class="fa fa-twitter" target="_blank" href="https://twitter.com/umrover"></a>
-		<a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/umroverteam/" style="margin-right: 3px" ></a>
+		<a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/umrover/" style="margin-right: 3px" ></a>
 		<a class="fa fa-youtube-play" target="_blank" href="https://www.youtube.com/watch?v=qf73hYbMD3A"></a>
 		
 	</div>
@@ -12,8 +12,11 @@
 		<h2 class="footer-heading">Our Sponsors</h2>
 		<!-- tspo used because adblock blocks the word sponsor -->
 		<div class="tspos">
-			{% for sponsor in site.sponsors %}
-				<a href="{{sponsor.rurl}}" target="_blank"><img src="{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
+			{% assign sponsors = (site.sponsors | sort: 'level' | reverse) %}
+			{% for sponsor in sponsors %}
+				<div class="tspo-container"> 
+					<a href="{{sponsor.rurl}}" target="_blank"><img src="{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
+				</div>
 			{% endfor %}
 		</div>
 	</div>

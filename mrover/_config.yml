@@ -25,3 +25,6 @@ collections:
 
 # Build settings
 markdown: kramdown
+
+#Make Jekyll build site to the docs folder, not mrover/_site
+destination: ../docs

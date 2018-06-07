@@ -11,14 +11,14 @@ If you are on Windows, follow the following [guide](https://jekyllrb.com/docs/wi
 
 ### Testing the site
 
-To test the site, simply run
+To test the site, simply navigate to the`/mrover` folder and run
 
     jekyll serve
 
 You can connect to the site by opening your browser and navigating to localhost:4000. Any changes that you save will automatically trigger jekyll to rebuild the site. You can see these changes by refreshing the page.
 
 ### Building the site for production
-To build the site for production, run
+To build the site for production, navigate to the `/mrover` folder and run
 
     JEKYLL_ENV=production jekyll build
     

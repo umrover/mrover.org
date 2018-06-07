@@ -2,10 +2,6 @@
 <head>
 
   <!-- Include the google analytics scripts if we are in the production environment (automatimcally activates when hosted on Github Pages)-->
-  <!--{% if jekyll.environment == "production" %}
-    {% include analytics.html %} 
-  {% endif %} -->
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- Note that this will still run when you are testing the site too, which could skew the analytics-->
   {% if jekyll.environment == "production" %}
@@ -19,6 +15,8 @@
       gtag('config', 'UA-119482193-1');
     </script>
 
+  {% else %}
+    <p style="text-align: center">-- Non-production Environment (No Google Analytics) --</p>
   {% endif %}
 
   <meta charset="utf-8">

@@ -25,8 +25,9 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    1200px;
 
-$on-palm:          780px;
-$on-laptop:        800px;
+//on-palm control the number of pixels at which the navigation list collapses into the hamburger button
+$on-palm:          910px;
+$on-laptop:        910px;
 
 
 

@@ -15,6 +15,7 @@
 .site-nav {
     float: right;
     line-height: 56px;
+    margin-top: 3px;
 
     .menu-icon {
         display: none;
@@ -23,6 +24,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        vertical-align: center;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -137,7 +139,6 @@
 	max-width:200px;
 	max-height:200px;
 	padding:10px 30px;
-    //vertical-align:middle;
     display:inline-block;
 }
 

@@ -1,24 +1,73 @@
 ---
-layout: default
+layout: nosponsors
 title: Sponsors
 permalink: sponsors/
 weight: 4
 hideInHeader: true
 ---
 
-<div class="join-page">
+<div class="sponsors-page">
   <div class="hero"></div>
 
-  <div class="contact-info wrap" style="max-width: 500px">
-    <br />
-    
-    <!-- Highest level sponsors-->
-    
-    <!-- Middle level sponsors-->
-    
-    <!-- Lowest level sponsors-->
+  <!-- Highest level sponsors-->
+  <div class="section-divider">
+    <h3>Olympus Mons Sponsors</h3>
+  </div>
 
-    <!-- Sponsor us! - info on what they get out of it, what to do with the funds, and contact us button. Maybe include a download for the sponsorship packet too? (would have to be updated each year)-->
+  <div class="tspos">
+    {% for sponsor in site.sponsors %}
+      {% if sponsor.level >= 3 %}
+        <div class="tspo-container"> 
+          <a href="{{sponsor.rurl}}" target="_blank"><img src="../{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
+          <!-- Note the '../' on the image src above is necessary here but not in the footer html because the footer is in the includes folder -->
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  
+  <!-- Middle level sponsors-->
+  <div class="section-divider">
+    <h3>Ares Sponsors</h3>
+  </div>
 
+  <div class="tspos">
+    {% for sponsor in site.sponsors %}
+      {% if sponsor.level == 2 %}
+        <div class="tspo-container"> 
+          <a href="{{sponsor.rurl}}" target="_blank"><img src="../{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
+          <!-- Note the '../' on the image src above is necessary here but not in the footer html because the footer is in the includes folder -->
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Lowest level sponsors-->
+  <div class="section-divider">
+    <h3>Pathfinder Sponsors</h3>
+  </div>
+
+  <div class="tspos">
+    {% for sponsor in site.sponsors %}
+      {% if sponsor.level == 1 %}
+        <div class="tspo-container"> 
+          <a href="{{sponsor.rurl}}" target="_blank"><img src="../{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
+          <!-- Note the '../' on the image src above is necessary here but not in the footer html because the footer is in the includes folder -->
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Sponsor us! - info on what they get out of it, what to do with the funds, and contact us button. Maybe include a download for the sponsorship packet too? (would have to be updated each year)-->
+  <div class="section-divider">
+    <h3>Sponsors Us!</h3>
+  </div>
+  <div class="wrapper">
+    <div class="cta"
+      <h6>Sponsor us?</h6>
+      <p>Interested in helping us win the University Rover Challenge? Any donation helps. We would greatly appreciate your support.</p>
+      <a href="/contact">
+          <button class="button-hollow">Contact us</button>
+      </a>
+    </div>
   </div>
 </div>

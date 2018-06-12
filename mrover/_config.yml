@@ -30,3 +30,6 @@ destination: ../docs
 
 #include the CNAME file in builds so that it ends up in docs (so that Github Pages can display our website at the address mrover.org)
 include: ["CNAME"]
+
+#exclude things that aren't meant to be included in the build
+exclude: ["Potential Images"]

@@ -155,7 +155,7 @@ pre {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 910px) {
     .wrapper, .social-media-wrapper {
       max-width: -webkit-calc(1200px - (30px));
       max-width: calc(1200px - (30px));
@@ -268,6 +268,7 @@ pre {
 
 /******************************************************************
 Author: Connor Krupp
+Edited 2018: Michael Wolf
 
 Stylesheet: Home Page
 ******************************************************************/
@@ -387,9 +388,9 @@ Author: Connor Krupp
 Stylesheet: Front Page Stylesheet
 ******************************************************************/
 .about-page .hero {
-  background-image: url("images/station-cropped.jpg");
+  background-image: url("images/about-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center 45%;
+  background-position: center 80%;
   background-size: cover; }
 .about-page .row-container {
   padding: 10px; }
@@ -469,15 +470,17 @@ Stylesheet: Front Page Stylesheet
 
 .site-nav {
   float: right;
-  line-height: 56px; }
+  line-height: 56px;
+  margin-top: 3px; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
     color: #5c6b80;
-    line-height: 1.5; }
+    line-height: 1.5;
+    vertical-align: center; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 910px) {
     .site-nav {
       position: absolute;
       top: 34px;
@@ -563,7 +566,7 @@ Stylesheet: Front Page Stylesheet
   height: auto;
   width: 100%; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 910px) {
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
@@ -572,7 +575,7 @@ Stylesheet: Front Page Stylesheet
   .footer-col-3 {
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 910px) {
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
@@ -607,7 +610,7 @@ Stylesheet: Front Page Stylesheet
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 910px) {
     .post-title {
       font-size: 36px; } }
 
@@ -615,17 +618,17 @@ Stylesheet: Front Page Stylesheet
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 910px) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 26px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 910px) {
       .post-content h3 {
         font-size: 22px; } }
   .post-content h4 {
     font-size: 20px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 910px) {
       .post-content h4 {
         font-size: 18px; } }
 
@@ -804,7 +807,7 @@ Stylesheet: Home Page
 ******************************************************************/
 .rovers-page .hero {
   background-image: url("images/rovers-bg.jpg");
-  background-position: 20% 58%;
+  background-position: center 50%;
   background-repeat: no-repeat;
   background-size: cover; }
 .rovers-page .row-container.two, .rovers-page .row-container.four {
@@ -892,22 +895,33 @@ Modified verison of Contact page
 
 Stylesheet: Sponsors Page Stylesheet
 ******************************************************************/
-.join-page {
+.sponsors-page {
   text-align: center;
   padding-bottom: 30px; }
-  .join-page .hero {
-    background-image: url("images/join-bg.jpg");
+  .sponsors-page .hero {
+    background-image: url("images/sponsors-bg.jpg");
     background-repeat: no-repeat;
     background-position: center 45%;
     background-size: cover; }
-  .join-page h4 {
+  .sponsors-page h4 {
     font-size: 24px; }
-  .join-page h6 {
+  .sponsors-page h6 {
     font-size: 18px;
     margin: 0;
     margin-top: 24px; }
-  .join-page p {
+  .sponsors-page p {
     margin: 0; }
-  .join-page a {
+  .sponsors-page a {
     font-size: 16px;
     text-decoration: none; }
+  .sponsors-page .cta {
+    text-align: center;
+    padding: 35px 0px 5px 0px;
+    margin: 0 auto;
+    max-width: 480px; }
+    .sponsors-page .cta h6 {
+      font-size: 24px;
+      margin: 0; }
+    .sponsors-page .cta p {
+      width: 100%;
+      margin: 10px auto 20px auto; }

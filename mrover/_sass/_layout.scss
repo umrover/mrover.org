@@ -129,16 +129,16 @@
 }
 
 .tspos {
-	line-height:150px;
     text-align:center;
     //margin:auto; //center
     width: 100%;
 }
 
 .tspo-container {
+    //line-height: 100px //use to add a minimum vertical spacing between logos (most noticeable on mobile)
 	max-width:200px;
 	max-height:200px;
-	padding:10px 30px;
+	padding:20px 30px;
     display:inline-block;
 }
 

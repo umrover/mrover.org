@@ -552,14 +552,13 @@ Stylesheet: Front Page Stylesheet
   width: calc(45% - (30px / 2)); }
 
 .tspos {
-  line-height: 150px;
   text-align: center;
   width: 100%; }
 
 .tspo-container {
   max-width: 200px;
   max-height: 200px;
-  padding: 10px 30px;
+  padding: 20px 30px;
   display: inline-block; }
 
 .tspos .tspo-logo {

@@ -5,7 +5,7 @@ Jekyll Powered site for the University of Michigan Mars Rover Team
 
 If you are on Mac or Linux, simply follow this installation [guide](https://jekyllrb.com/docs/installation/).
 
-If you are on Windows, follow the following [guide](https://jekyllrb.com/docs/windows/).  
+If you are on Windows, use this installation [guide](https://jekyllrb.com/docs/windows/).  
 - If you use the Ruby Installer for Windows, you will have to run the production build command from Git Bash or a similar program
 - If you install Jekyll using the Windows Subsystem for Linux, you will have to run the bash command from Powershell to enter a bash prompt and run jekyll commands.
 
@@ -22,7 +22,7 @@ To build the site for production, navigate to the `/mrover` folder and run
 
     JEKYLL_ENV=production jekyll build
     
-Github Pages will automatically deploy whatever folder is in the /docs/ folder of the repository.
+Github Pages will automatically deploy the content in the /docs/ folder of the repository.
 
 If the site is note appearing, make sure there is a file called `CNAME` (no file extension) that contains the text `mrover.org` to the docs folder.
 

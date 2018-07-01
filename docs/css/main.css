@@ -177,7 +177,7 @@ pre {
 /**
  * Clearfix
  */
-.wrapper:after, .social-media-wrapper:after, .home .join-donate-cta .wrap:after, .footer-col-wrapper:after, .rovers-page .join-donate-cta .wrap:after {
+.wrapper:after, .social-media-wrapper:after, .home .join-donate-cta .wrap:after, .footer-col-wrapper:after {
   content: "";
   display: table;
   clear: both; }
@@ -804,90 +804,266 @@ Modified version of Home Page stylesheet
 
 Stylesheet: Home Page
 ******************************************************************/
-.rovers-page .hero {
-  background-image: url("images/rovers-bg.jpg");
-  background-position: center 50%;
-  background-repeat: no-repeat;
-  background-size: cover; }
-.rovers-page .row-container.two, .rovers-page .row-container.four {
-  background-color: #ecf0f1; }
-  .rovers-page .row-container.two .text-content, .rovers-page .row-container.four .text-content {
-    padding-right: 0;
-    padding-left: 60px; }
-.rovers-page .row-container.three {
-  background-color: white; }
-@media (max-width: 768px) {
-  .rovers-page .row-container.one .row-content, .rovers-page .row-container.two .row-content, .rovers-page .row-container.three .row-content, .rovers-page .row-container.four .row-content {
-    display: table-header-group; }
-  .rovers-page .row-container.one .text-content, .rovers-page .row-container.two .text-content, .rovers-page .row-container.three .text-content, .rovers-page .row-container.four .text-content {
-    display: table-footer-group;
-    margin: 0 10px; } }
-.rovers-page .row-container .wrap {
-  display: table;
-  max-width: 800px;
-  width: 90%;
-  margin: 0 auto; }
-.rovers-page .row-container .row-content {
-  display: table-cell;
-  vertical-align: middle; }
-  @media (max-width: 768px) {
-    .rovers-page .row-container .row-content {
-      display: block;
-      margin: 0 auto;
-      width: 75%; } }
-.rovers-page .row-container .text-content {
-  padding: 50px 0;
-  padding-right: 60px; }
-  .rovers-page .row-container .text-content h4 {
-    font-size: 24px;
-    margin: 0; }
-  @media (max-width: 768px) {
-    .rovers-page .row-container .text-content {
-      padding-right: 0;
-      padding-left: 0 !important; } }
-.rovers-page .row-container .block {
-  width: 320px;
-  height: 200px;
-  background-color: #2c3e50;
-  background-size: cover; }
-  .rovers-page .row-container .block.two {
-    background-image: url("images/rovers/2017.jpg"); }
-  .rovers-page .row-container .block.three {
-    background-image: url("images/rovers/2016.jpg"); }
-  .rovers-page .row-container .block.four {
-    background-image: url("images/team-old-downscaled.jpg");
-    background-size: cover; }
-  @media (max-width: 768px) {
-    .rovers-page .row-container .block {
-      display: block;
-      margin: 30px auto;
-      float: none;
-      width: 300px;
-      height: 187px; } }
-.rovers-page .join-donate-cta {
-  background-color: #ecf0f1; }
-  .rovers-page .join-donate-cta .cta {
-    width: 50%;
-    text-align: center;
-    padding: 40px 0;
-    float: left; }
-    .rovers-page .join-donate-cta .cta h6 {
-      font-size: 24px;
-      margin: 0; }
-    .rovers-page .join-donate-cta .cta p {
-      width: 80%;
-      margin: 10px auto 20px auto;
-      max-width: 400px; }
-    @media (max-width: 768px) {
-      .rovers-page .join-donate-cta .cta {
-        width: 92%;
-        float: none;
-        margin: 0 auto; } }
-.rovers-page .join-donate-cta .wrap {
-  max-width: 900px;
-  margin: 0 auto;
-  clear: both; }
+.rovers-page {
+  /*
+  .row-container {
 
+    &.two, &.four {
+      background-color: #ecf0f1;
+      .text-content {
+        padding-right: 0;
+        padding-left: 60px;
+      }
+    }
+
+    &.three {
+      background-color: white;
+    }
+
+    &.one, &.two, &.three, &.four {
+      @media (max-width: 768px) {
+        .row-content {
+          display: table-header-group;
+        }
+        .text-content {
+          display: table-footer-group;
+          margin: 0 10px;
+        }
+      }
+    }
+
+    .wrap {
+      display: table;
+      max-width: 800px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .row-content {
+      display:table-cell;
+      vertical-align: middle;
+
+      @media (max-width: 768px) {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+      }
+    }
+
+    .text-content {
+      padding: 50px 0;
+      padding-right: 60px;
+
+      h4 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        padding-right: 0;
+        padding-left: 0 !important;
+      }
+    }
+
+    .block {
+      width: 320px;
+      height: 200px;
+      background-color: #2c3e50;
+      background-size: cover;
+
+      &.one {
+        //background-image: url("images/rovers/phoebe.jpg");
+      }
+
+      &.two {
+        background-image: url("/rovers/roverImages/2017.jpg");
+      }
+
+      &.three {
+        background-image: url("/rovers/roverImages/2016.jpg");
+      }
+
+      &.four {
+        background-image: url("/rovers/roverImages/2015.jpg");
+        background-size: cover;
+      }
+
+      @media (max-width: 768px) {
+        display: block;
+        margin: 30px auto;
+        float: none;
+        width: 300px;
+        height: 187px;
+      }
+    }
+  }
+  */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */ }
+  .rovers-page .hero {
+    background-image: url("images/rovers-bg.jpg");
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .rovers-page .content-wrapper {
+    display: flex;
+    justify-content: center; }
+  .rovers-page .content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ecf0f1;
+    max-width: 1600px; }
+  .rovers-page .left {
+    width: 40%;
+    flex-grow: 1;
+    padding: 0px 20px;
+    text-align: center; }
+    .rovers-page .left p {
+      padding-bottom: 10px; }
+    @media (max-width: 1050px) {
+      .rovers-page .left {
+        width: 100%; } }
+  .rovers-page .right {
+    position: relative;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center; }
+    @media (max-width: 1050px) {
+      .rovers-page .right {
+        width: 100%; } }
+  .rovers-page .tiles-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    margin: 50px auto;
+    max-width: 1600px;
+    position: relative;
+    align-self: center; }
+    @media (max-width: 1600px) {
+      .rovers-page .tiles-container {
+        margin: 50px; } }
+    @media (max-width: 1050px) {
+      .rovers-page .tiles-container {
+        margin: 6px; } }
+  .rovers-page .tile {
+    width: 30%;
+    position: relative;
+    flex-grow: 1;
+    margin: 3px;
+    background-size: cover;
+    background-position: 50%;
+    padding-top: 33.30%; }
+    @media (min-width: 1050px) {
+      .rovers-page .tile {
+        padding-top: 0%;
+        height: 320px; } }
+  .rovers-page .tile-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%; }
+  .rovers-page .tile-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #0f3377; }
+    .rovers-page .tile-overlay:hover {
+      opacity: 0.9; }
+    @media screen and (max-width: 500px) {
+      .rovers-page .tile-overlay {
+        transition: none;
+        background-color: transparent;
+        opacity: 1; }
+        .rovers-page .tile-overlay p {
+          display: none; } }
+  .rovers-page .tile-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    -ms-transform: translate(-50%, -40%);
+    text-align: center;
+    line-height: 100%; }
+    .rovers-page .tile-text p {
+      color: lightgray; }
+  .rovers-page .slide {
+    display: none; }
+  .rovers-page .prev, .rovers-page .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    text-decoration: none; }
+  .rovers-page .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  .rovers-page .prev {
+    left: 0; }
+  .rovers-page .prev:hover, .rovers-page .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+  .rovers-page .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center; }
+  .rovers-page .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0; }
+  .rovers-page .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  .rovers-page .active, .rovers-page .dot:hover {
+    background-color: #717171; }
+  .rovers-page .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.75s;
+    animation-name: fade;
+    animation-duration: 0.75s; }
+@-webkit-keyframes fade {
+  from {
+    opacity: .6; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .6; }
+  to {
+    opacity: 1; } }
 /******************************************************************
 Author: Michael Wolf
 Modified verison of Contact page

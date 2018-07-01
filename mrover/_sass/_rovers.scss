@@ -5,141 +5,331 @@ Modified version of Home Page stylesheet
 Stylesheet: Home Page
 ******************************************************************/
 
-.rovers-page {
-    .hero {
-      background-image: url("images/rovers-bg.jpg");
-      background-position: center 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  
-    .row-container {
-  
-      &.two, &.four {
-        background-color: #ecf0f1;
-        .text-content {
-          padding-right: 0;
-          padding-left: 60px;
-        }
-      }
-  
-      &.three {
-        background-color: white;
-      }
-  
-      &.one, &.two, &.three, &.four {
-        @media (max-width: 768px) {
-          .row-content {
-            display: table-header-group;
-          }
-          .text-content {
-            display: table-footer-group;
-            margin: 0 10px;
-          }
-        }
-      }
-  
-      .wrap {
-        display: table;
-        max-width: 800px;
-        width: 90%;
-        margin: 0 auto;
-      }
-  
-      .row-content {
-        display:table-cell;
-        vertical-align: middle;
-  
-        @media (max-width: 768px) {
-          display: block;
-          margin: 0 auto;
-          width: 75%;
-        }
-      }
-  
-      .text-content {
-        padding: 50px 0;
-        padding-right: 60px;
-  
-        h4 {
-          font-size: 24px;
-          margin: 0;
-        }
-  
-        @media (max-width: 768px) {
-          padding-right: 0;
-          padding-left: 0 !important;
-        }
-      }
-  
-      .block {
-        width: 320px;
-        height: 200px;
-        background-color: #2c3e50;
-        background-size: cover;
-  
-        &.one {
-          //background-image: url("images/rovers/phoebe.jpg");
-        }
-  
-        &.two {
-          background-image: url("images/rovers/2017.jpg");
-        }
-  
-        &.three {
-          background-image: url("images/rovers/2016.jpg");
-        }
+$square-images-max: 1050px;
+$max-width: 1600px;
+$touchscreen-view-maxwidth: 500px;
 
-        &.four {
-          background-image: url("images/team-old-downscaled.jpg");
-          background-size: cover;
+.rovers-page {
+
+  .hero {
+    background-image: url("images/rovers-bg.jpg");
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  /*
+  .row-container {
+
+    &.two, &.four {
+      background-color: #ecf0f1;
+      .text-content {
+        padding-right: 0;
+        padding-left: 60px;
+      }
+    }
+
+    &.three {
+      background-color: white;
+    }
+
+    &.one, &.two, &.three, &.four {
+      @media (max-width: 768px) {
+        .row-content {
+          display: table-header-group;
         }
-  
-        @media (max-width: 768px) {
-          display: block;
-          margin: 30px auto;
-          float: none;
-          width: 300px;
-          height: 187px;
+        .text-content {
+          display: table-footer-group;
+          margin: 0 10px;
         }
       }
     }
+
+    .wrap {
+      display: table;
+      max-width: 800px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .row-content {
+      display:table-cell;
+      vertical-align: middle;
+
+      @media (max-width: 768px) {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+      }
+    }
+
+    .text-content {
+      padding: 50px 0;
+      padding-right: 60px;
+
+      h4 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        padding-right: 0;
+        padding-left: 0 !important;
+      }
+    }
+
+    .block {
+      width: 320px;
+      height: 200px;
+      background-color: #2c3e50;
+      background-size: cover;
+
+      &.one {
+        //background-image: url("images/rovers/phoebe.jpg");
+      }
+
+      &.two {
+        background-image: url("/rovers/roverImages/2017.jpg");
+      }
+
+      &.three {
+        background-image: url("/rovers/roverImages/2016.jpg");
+      }
+
+      &.four {
+        background-image: url("/rovers/roverImages/2015.jpg");
+        background-size: cover;
+      }
+
+      @media (max-width: 768px) {
+        display: block;
+        margin: 30px auto;
+        float: none;
+        width: 300px;
+        height: 187px;
+      }
+    }
+  }
+  */
+
+  .content-wrapper {
+    display: flex; 
+    justify-content: center;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ecf0f1;
+    max-width: $max-width;
+  }
+
+  .left
+  {
+    width: 40%;
+    flex-grow: 1;
+    padding: 0px 20px; //note - vertical padding will cause this div to take up space when it has no content
+
+    text-align: center;
+    p {
+      padding-bottom: 10px;
+    }
+    
+    @media(max-width: $square-images-max){
+      width: 100%;
+    }
+  }
   
-    .join-donate-cta {
-      background-color: #ecf0f1;
-      .cta {
-        width: 50%;
-        text-align: center;
-        padding: 40px 0;
-        float: left;
+  .right
+  {
+    position: relative;
+    width:40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    @media(max-width: $square-images-max){
+      width: 100%;
+    }
+  }
+
+  .tiles-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    margin: 50px auto;
+    max-width: $max-width;
+    position: relative;
+    align-self: center;
+
+    @media(max-width: $max-width){
+      margin: 50px;
+    }
+
+    @media(max-width: $square-images-max){
+      margin: 6px;
+    }
+    
+  }
+
+  .tile {
+    width: 30%; //30% is just a starting point: the flex-grow will cause it to grow to take up the full 33.3% of the space
+    //height: 320px;
+    position: relative;
+    flex-grow: 1;
+    margin: 3px;
+    background-size: cover;
+    background-position: 50%;
+    
+    padding-top: 33.30%;
+
+    @media(min-width: $square-images-max){
+      padding-top: 0%;
+      height: 320px;
+    }
+  }
   
-        h6 {
-          font-size: 24px;
-          margin: 0;
-        }
-  
-        p {
-          width: 80%;
-          margin: 10px auto 20px auto;
-          max-width: 400px;
-        }
-  
-        @media (max-width: 768px) {
-          width: 92%;
-          float: none;
-          margin: 0 auto;
-        }
+
+  .tile-bg {
+    width: 100%; height:100%;
+    background-size: cover;
+    background-position: 50%
+  }
+
+  .tile-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(15, 51, 119);
+    &:hover {
+      opacity: 0.9;
+    }
+    
+    @media screen and (max-width: $touchscreen-view-maxwidth){
+      transition: none;
+      background-color: transparent;
+      opacity: 1;
+
+      p {
+        display: none;
       }
     }
     
-    .join-donate-cta .wrap {
-        max-width: 900px;
-        margin: 0 auto;
-        clear: both;
-        
-        @extend %clearfix;
-    }
-  
-  
   }
-  
+
+  .tile-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    -ms-transform: translate(-50%, -40%);
+    text-align: center;
+    line-height: 100%;
+
+    p {
+      color: lightgray;
+    }
+  }
+
+  //Slideshow stuff from W3Schools
+
+  .slide {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.75s;
+  animation-name: fade;
+  animation-duration: 0.75s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+}

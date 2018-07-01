@@ -7,116 +7,168 @@ weight: 3
 
 <div class="rovers-page">
 
-    <div class="hero"></div>
+    <div class="hero">
+    </div>
     
     <div class="section-divider">
         <h3>Our Rovers</h3>
     </div>
 
-    <div class="row-container one">
-        <div class="wrap">
-            <div class="row-content text-content">
-                <h4>2018 - Phoebe</h4>
-                <p>This year, we decided to give our subsystems a major overhaul. 
-                    We abandoned the six-wheeled "rocker-bogie" suspension system in favor of a system that would allow us to travel faster - four independent shock absorbers and a differential bar.
-                    To give us more room for subsystems, we substantially increased the size of the chassis.
-                    Additionally, we designed our soil acquisition drill and robotic arm from the ground up, applying lessons learned in past years to 
-                    produce brand new designs.
-                    </p>
+    <div>
+        <!-- <div class="wrap" style="max-width: 1300px;"> -->
+            <div class="tiles-container">
+                {% for rover in site.roverInfo %}
+                    <a class="tile" href="#content" id="{{rover.year}}" style="background-image: url('{{rover.image_path}}');">
 
-                <p>
-                    With the largest number of programmers in MRover history, we undertook the task of rewriting the entire codebase to
-                    create a maintainable codebase to use for years to come.
-                    This time, instead of using the Robot Operating System, we developed simpler software more focused on our needs.
-                    This included developing our own simulators to rapidly test code.
-                    We also implemented an "edge computing" approach, dividing up computing
-                    between many small computers and microcontrollers on the rover.
+                        <span style="display: none" class="year">{{rover.year}}</span>
+                        <span style="display: none" class="name">{{rover.name}}</span>
+                        <span style="display: none" class="imageURL">{{rover.image_path}}</span>
+                        {% for para in rover.desc %}
+                        <span style="display: none" class="desc">{{para}}</span>
+                        {% endfor %}
 
-                    <!-- could also mention the split electronics boxes, or new mast design, or many other things -->
-                    <!-- consider abandoning the detail about the ROS -->
-                </p>
-                </p>
+                        {% for slide in rover.slideshow %}
+                        <span style="display: none" class="slide">{{slide}}</span>
+                        {% endfor %}
+
+                        <div class="tile-bg" ></div>
+                        <div class="tile-overlay">
+                            <div class="tile-text">
+                                <h1>{{rover.year}}</h1>
+                                <p>{{rover.name}}</p>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
             </div>
-            <div class="row-content">
-                <div class="block one" style="background-image: url('phoebe.jpg')"></div>
-            </div>
-        </div>
+        <!-- </div> -->
     </div>
-
-    <div class="row-container two">
-        <div class="wrap">
-            <div class="row-content">
-                <div class="block two"></div>
-            </div>
-            <div class="row-content text-content">
-                <h4>2017 - Hughey </h4>
-                <p>
-                    In 2017, the URC introduced the autonomous navigation task, adding an entirely new dimension to the competition. 
-                    To test autonomy code without having a fully equipped rover, we used the simulation features of the Robot Operating System.
-                    
-                </p><p>
-
-                    Mechanically speaking, Hughey was an improved version of the previous model, using a similar chassis and rocker-bogie suspension.
-                    Most changes were small adjustments, such as upgrading the fram from aluminum to carbon fiber. <!--maybe remove this line and the rpevious one -->
-                    The most significant change was the separation of the soil acquisition subsystem from the robotic arm.
-                    We alse replaced the large linear actuator on the upper arm with motor and geartrain, completing our transition from linear actuation of the arm.
-
-                    <!-- Maybe mention the complete software rewrite and/or adoptions of ROS? -->
+    <div class="content-wrapper">
+        <div class="content-container" id="content">
+            <!-- Populated depending on which tile is selected -->
+            <div class="left">
+                <!-- Contains the text on the left-hand side -->
+                <div id="content-title"> </div>
+                <div id="content-text"> </div>
                 
-                </p>
             </div>
-        </div>
-    </div>
-
-    <div class="row-container three">
-        <div class="wrap">
-            <div class="row-content text-content">
-                <h4>2016 - Golu Golu </h4>
-                    <p>
-                        Starting with the designs from the 2015 rover, Golu Golu's mechanical systems innovated on the prior year's in several ways. 
-                        Golu Golu marked the start of a transition away from a linearly actuated arm, using motors and geartrains for all segments except the upper arm.
-                        
-                    </p><p>
-
-                        Our software this year was an improved version of the previous year's as well. With Golu Golu's more complex arm, the team had 
-                        to develop a more advanced control scheme for the robotic arm.
-                    
-
-                    </p>
+            <div class="right">
+                <div id="content-slideshow" class="slideshow"></div>
                 </div>
-            <div class="row-content">
-                <div class="block three"></div>
             </div>
         </div>
     </div>
-  
-    <div class="row-container two"> <!-- rename "two" to even and "one" to odd -->
-        <div class="wrap">
-            <div class="row-content">
-                <div class="block four"></div>
-            </div>
-            <div class="row-content text-content">
-                <h4>2015 - Grover </h4> <!-- Full name: Grover M. Rover -->
-                <p>
-                  
-                    Grover featured many designs that would be signatures of MRover for the next few years. 
-                    The six-wheeled rocker-bogie mechanism allowed the rover to remain stable on uneven terrain, and the rectangular chassis
-                    allowed the electronics to be housed in the back and the subsystems in the front.
-                  
-                </p><p>
-  
-                    With an entirely new set of programmers, it was decided that the previous year's software was outdated and that the best move was to start from scratch. 
-                    Starting with a simple set of programs for encoding joystick data at the base station and decoding it onboard the rover, our programmers
-                    began developing code that would be used in future years and learning lessons in developing a maintainable codebase. 
-                  
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Other notes -->
-    <!-- 2013 Rover called "cydonia"-->
-    <!-- Theres also the 2011-2012ish era Mars society challenge entry that isn't exactly a rover--> 
-  
-  
 </div>
+
+
+
+<!-- Scripts -->
+
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.visible.js"></script>
+
+<script>
+    var slideIndex = 0;
+
+    function initSlides() {
+        slideIndex = 0;
+        showSlides(slideIndex);
+        if($("#content-slideshow .slide").length == 1) {
+            $(".next").css({"display":"none"});
+            $(".prev").css({"display":"none"});
+        }
+        else{
+            $(".next").css({"display":"block"});
+            $(".prev").css({"display":"block"});
+        }
+    }
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+
+        var i = 0;
+        
+        var slides = $("#content-slideshow .slide");
+
+        if(n >= slides.length) {n = slideIndex = 0;}
+        if(n < 0) {n = slideIndex = slides.length - 1;}
+        
+        slides.each( function() {
+            if(i == n)
+            {
+                $(this).css({"display":"block"});
+            }
+            else
+            {
+                $(this).css({"display":"none"});
+            }
+            i++;
+        }
+        );
+    }
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+        //Populate the content div
+        $("#content-title").html("<h1>" + $(event.currentTarget).find(".year").text() + " - " + $(event.currentTarget).find(".name").text() + "</h1>");
+        $("#content-text").empty();
+        $(event.currentTarget).find(".desc").each( function(){
+            $("#content-text").append("<p>" + this.innerText + "</p>");
+        });
+
+        $("#content-slideshow").empty();
+        $(event.currentTarget).find(".slide").each( function(){
+            $("#content-slideshow").append("<img class=\"slide fade\" src=\"" + this.innerText + "\" style=\"width:100%; height:auto; display: none;\"></img>");
+        });
+        $("#content-slideshow").append('<a class="prev" onclick="plusSlides(-1)">&#10094;</a>');
+        $("#content-slideshow").append('<a class="next" onclick="plusSlides(1)">&#10095;</a>');
+
+        
+        initSlides();
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+    //If the entire text box is visible after changing the text, don't scroll the screen
+    if($("#content-text").visible())
+    {
+        return;
+    }
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+
+
+    //Prevent any (scrolling) animations that queued up while the current one was playing
+    $('html, body').clearQueue();
+    
+  });
+});
+</script>

@@ -9,6 +9,14 @@ If you are on Windows, use this installation [guide](https://jekyllrb.com/docs/w
 - If you use the Ruby Installer for Windows, you will have to run the production build command from Git Bash or a similar program
 - If you install Jekyll using the Windows Subsystem for Linux, you will have to run the bash command from Powershell to enter a bash prompt and run jekyll commands.
 
+### Updating the Rovers Page
+
+The content of the Rovers page is controlled by the .md files in the _roverInfo folder. The images for this page can be stored anywhere, although for the purpose of organization, we keep them in the rovers/roverImages folder.
+
+The .md files in the _roverInfo folder contain data in a YAML frontmatter (surrounded by "---"). Use any text editor to modify this data.
+
+To add a rover to this page, simply any of the .md files from a previous year and edit the data inside. Then, rebuild the site for production and push to Github.
+
 ### Testing the site
 
 To test the site, simply navigate to the`/mrover` folder and run
@@ -22,7 +30,7 @@ To build the site for production, navigate to the `/mrover` folder and run
 
     JEKYLL_ENV=production jekyll build
     
-Github Pages will automatically deploy the content in the /docs/ folder of the repository.
+Once you push to Github, Github Pages will automatically deploy the content in the /docs/ folder of the repository.
 
 If the site is note appearing, make sure there is a file called `CNAME` (no file extension) that contains the text `mrover.org` to the docs folder.
 

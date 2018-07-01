@@ -21,6 +21,7 @@ instagram_username: umroverteam
 # Our sponsors
 collections:
     sponsors:
+    roverInfo:
 
 # Build settings
 markdown: kramdown

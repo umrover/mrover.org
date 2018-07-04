@@ -172,7 +172,9 @@ $touchscreen-view-maxwidth: 500px;
     @media(max-width: $square-images-max){
       margin: 6px;
     }
-    
+    @media(max-width: $touchscreen-view-maxwidth){
+      margin: 1px;
+    }
   }
 
   .tile {
@@ -189,6 +191,9 @@ $touchscreen-view-maxwidth: 500px;
     @media(min-width: $square-images-max){
       padding-top: 0%;
       height: 320px;
+    }
+    @media(max-width: $touchscreen-view-maxwidth){
+      margin: 1px;
     }
   }
   

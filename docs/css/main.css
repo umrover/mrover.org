@@ -953,6 +953,9 @@ Stylesheet: Home Page
     @media (max-width: 1050px) {
       .rovers-page .tiles-container {
         margin: 6px; } }
+    @media (max-width: 500px) {
+      .rovers-page .tiles-container {
+        margin: 1px; } }
   .rovers-page .tile {
     width: 30%;
     position: relative;
@@ -965,6 +968,9 @@ Stylesheet: Home Page
       .rovers-page .tile {
         padding-top: 0%;
         height: 320px; } }
+    @media (max-width: 500px) {
+      .rovers-page .tile {
+        margin: 1px; } }
   .rovers-page .tile-bg {
     width: 100%;
     height: 100%;

@@ -797,6 +797,116 @@ Stylesheet: Join Page Stylesheet
   .join-page a {
     font-size: 16px;
     text-decoration: none; }
+  .join-page .form-style-5 {
+    max-width: 500px;
+    padding: 10px 15px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif; }
+  .join-page .form-style-5 fieldset {
+    border: none; }
+  .join-page .form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 15px; }
+  .join-page .form-style-5 label {
+    display: block;
+    margin-bottom: 8px; }
+  .join-page .form-style-5 input[type="text"],
+  .join-page .form-style-5 input[type="date"],
+  .join-page .form-style-5 input[type="datetime"],
+  .join-page .form-style-5 input[type="email"],
+  .join-page .form-style-5 input[type="number"],
+  .join-page .form-style-5 input[type="search"],
+  .join-page .form-style-5 input[type="time"],
+  .join-page .form-style-5 input[type="url"],
+  .join-page .form-style-5 textarea,
+  .join-page .form-style-5 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #606970;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px; }
+  .join-page input::placeholder, .join-page textarea::placeholder {
+    color: #8a97a0; }
+  .join-page .form-style-5 textarea {
+    height: 90px;
+    resize: vertical; }
+  .join-page .form-style-5 input[type="text"]:focus,
+  .join-page .form-style-5 input[type="date"]:focus,
+  .join-page .form-style-5 input[type="datetime"]:focus,
+  .join-page .form-style-5 input[type="email"]:focus,
+  .join-page .form-style-5 input[type="number"]:focus,
+  .join-page .form-style-5 input[type="search"]:focus,
+  .join-page .form-style-5 input[type="time"]:focus,
+  .join-page .form-style-5 input[type="url"]:focus,
+  .join-page .form-style-5 textarea:focus,
+  .join-page .form-style-5 select:focus {
+    background: #d2d9dd; }
+  .join-page .form-style-5 select {
+    -webkit-appearance: menulist-button;
+    height: 35px; }
+  .join-page .form-style-5 .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px; }
+  .join-page .form-style-5 input[type="submit"],
+  .join-page .form-style-5 input[type="button"] {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px; }
+  .join-page .form-style-5 input[type="submit"]:hover,
+  .join-page .form-style-5 input[type="button"]:hover {
+    background: #109177; }
+  .join-page #name {
+    margin-right: 4px; }
+    @media (max-width: 460px) {
+      .join-page #name {
+        margin-left: 0px; } }
+  .join-page #email {
+    margin-left: 4px; }
+    @media (max-width: 460px) {
+      .join-page #email {
+        margin-left: 0px; } }
+  .join-page #dual_input_container {
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 460px) {
+      .join-page #dual_input_container {
+        display: block;
+        justify-content: center; } }
 
 /******************************************************************
 Author: Michael Wolf
@@ -805,99 +915,6 @@ Modified version of Home Page stylesheet
 Stylesheet: Home Page
 ******************************************************************/
 .rovers-page {
-  /*
-  .row-container {
-
-    &.two, &.four {
-      background-color: #ecf0f1;
-      .text-content {
-        padding-right: 0;
-        padding-left: 60px;
-      }
-    }
-
-    &.three {
-      background-color: white;
-    }
-
-    &.one, &.two, &.three, &.four {
-      @media (max-width: 768px) {
-        .row-content {
-          display: table-header-group;
-        }
-        .text-content {
-          display: table-footer-group;
-          margin: 0 10px;
-        }
-      }
-    }
-
-    .wrap {
-      display: table;
-      max-width: 800px;
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .row-content {
-      display:table-cell;
-      vertical-align: middle;
-
-      @media (max-width: 768px) {
-        display: block;
-        margin: 0 auto;
-        width: 75%;
-      }
-    }
-
-    .text-content {
-      padding: 50px 0;
-      padding-right: 60px;
-
-      h4 {
-        font-size: 24px;
-        margin: 0;
-      }
-
-      @media (max-width: 768px) {
-        padding-right: 0;
-        padding-left: 0 !important;
-      }
-    }
-
-    .block {
-      width: 320px;
-      height: 200px;
-      background-color: #2c3e50;
-      background-size: cover;
-
-      &.one {
-        //background-image: url("images/rovers/phoebe.jpg");
-      }
-
-      &.two {
-        background-image: url("/rovers/roverImages/2017.jpg");
-      }
-
-      &.three {
-        background-image: url("/rovers/roverImages/2016.jpg");
-      }
-
-      &.four {
-        background-image: url("/rovers/roverImages/2015.jpg");
-        background-size: cover;
-      }
-
-      @media (max-width: 768px) {
-        display: block;
-        margin: 30px auto;
-        float: none;
-        width: 300px;
-        height: 187px;
-      }
-    }
-  }
-  */
   /* Next & previous buttons */
   /* Position the "next button" to the right */
   /* On hover, add a black background color with a little bit see-through */

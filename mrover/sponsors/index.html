@@ -57,15 +57,28 @@ hideInHeader: true
     {% endfor %}
   </div>
 
+  <!-- Individual Donors-->
+  <div class="section-divider">
+    <h3>Individual Donors</h3>
+  </div>
+  <div class="separator"> </div>
+  <div>
+    {% assign sorted = site.data.donors | sort: 'amount' | reverse %}
+    {% for donor in sorted %}
+      
+      <h4>{{ donor.name }} </h4>
+
+    {% endfor %}
+  </div>
   <!-- Sponsor us! - info on what they get out of it, what to do with the funds, and contact us button. Maybe include a download for the sponsorship packet too? (would have to be updated each year)-->
   <div class="section-divider">
-    <h3>Sponsors Us!</h3>
+    <h3>Sponsor Us!</h3>
   </div>
   <div class="wrapper">
     <div class="cta">
       <p>Interested in helping us win the University Rover Challenge? Any donation helps. We would greatly appreciate your support.</p>
-      <a href="/contact">
-          <button class="button-hollow">Contact us</button>
+      <a href="/donate">
+          <button class="button-hollow">Sponsor Us</button>
       </a>
     </div>
   </div>

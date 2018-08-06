@@ -1103,6 +1103,8 @@ Stylesheet: Sponsors Page Stylesheet
     background-size: cover; }
   .sponsors-page h4 {
     font-size: 24px; }
+  .sponsors-page .separator {
+    height: 15px; }
   .sponsors-page h6 {
     font-size: 18px;
     margin: 0;
@@ -1121,5 +1123,44 @@ Stylesheet: Sponsors Page Stylesheet
       font-size: 24px;
       margin: 0; }
     .sponsors-page .cta p {
+      width: 100%;
+      margin: 10px auto 20px auto; }
+
+/******************************************************************
+Author: Michael Wolf
+Modified verison of Contact page
+
+Stylesheet: Sponsor Us Page Stylesheet
+******************************************************************/
+.sponsor-us-page {
+  text-align: center;
+  padding-bottom: 30px; }
+  .sponsor-us-page .hero {
+    background-image: url("images/sponsor-us-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center 65%;
+    background-size: cover; }
+  .sponsor-us-page h4 {
+    font-size: 24px; }
+  .sponsor-us-page .separator {
+    height: 15px; }
+  .sponsor-us-page h6 {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 24px; }
+  .sponsor-us-page p {
+    margin: 0; }
+  .sponsor-us-page a {
+    font-size: 16px;
+    text-decoration: none; }
+  .sponsor-us-page .cta {
+    text-align: center;
+    padding: 35px 0px 5px 0px;
+    margin: 0 auto;
+    max-width: 480px; }
+    .sponsor-us-page .cta h6 {
+      font-size: 24px;
+      margin: 0; }
+    .sponsor-us-page .cta p {
       width: 100%;
       margin: 10px auto 20px auto; }

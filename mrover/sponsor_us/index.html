@@ -1,34 +1,95 @@
 ---
 layout: default
-title: Sponsors
-permalink: sponsor_us/
+title: Sponsor
+permalink: donate/
 weight: 4
-hideInHeader: true
+hideInHeader: false
 ---
 
-<div class="sponsors-page">
-  <div class="hero"></div>
+<style>
+  .sponsor_us_wrapper {
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-  <!-- Highest level sponsors-->
+</style>
+<div class="sponsor-us-page">
+  <div class="hero"></div>
+ 
+  <!-- Sponsorship Information -->
+
   <div class="section-divider">
-    <h3>Olympus Mons Sponsors</h3>
+    <h3>Sponsorships</h3>
   </div>
 
-  <div class="tspos">
-    {% for sponsor in site.sponsors %}
-      {% if sponsor.level >= 3 %}
-        <div class="tspo-container"> 
-          <a href="{{sponsor.rurl}}" target="_blank"><img src="../{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
-          <!-- Note the '../' on the image src above is necessary here but not in the footer html because the footer is in the includes folder -->
-        </div>
-      {% endif %}
-    {% endfor %}
+  <div class="sponsor_us_wrapper">
+    MRover relies on sponsorships and donations to fund all of our activities throughout the year.
+    In particular, we use funds to:
+    <br/>
+    <ul>
+      <li>purchase materials</li>
+      <li>create prototypes</li>
+      <li>improve our toolset</li> 
+      <li>organize outreach events</li>
+      <li>send the team to competition</li>
+    </ul> 
+
+    As we ramp up our outreach efforts, plan more prototypes, and look into going to additional competitions,
+    our team budget is rising. We would appreciate your support to
+    help us continue our growth as a team.
+    
+    <br/><br/>
+
+    If you want more information about sponsoring us, please contact us at:
+
+    <h4 style="text-align: center">rover@umich.edu</h4>
   </div>
   
-  <!-- Middle level sponsors-->
+  <!-- Individual Donations -->
+
+  <div class="section-divider">
+    <h3>Individual Donations</h3>
+  </div>
+  
+  <div class="sponsor_us_wrapper">
+    <div style="display: flex; justify-content: center; align-items: center">
+      <p>We value online donations by individuals. You choose the size of your donation. Any amount helps! All donors get their names on our website.</p>
+      <a href="https://leadersandbest.umich.edu/find/#!/give/basket/fund/933717" style="margin-left: 30px;">
+          <button class="button-hollow">Donate</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sponsorship Levels -->
   <div class="section-divider">
     <h3>Sponsorship Levels</h3>
   </div>
+  <div class="sponsor_us_wrapper">
 
-  <h4 style="text-align: center; width: 100%;">rover@umich.edu</h4>
+    <h4>Olympus Mons - $2,000</h5>
+      <ul>
+        <li>MRover-hosted info sessions for sponsors at career fairs or other dates at sponsor’s discretion </li>
+        <li>Access to the team for videos, case studies, etc.</li>
+        <li>Most prominent logos on website, t-shirts, and presentations</li>
+        <li>One social media post recognizing the sponsor exclusively</li>
+      </ul>
+    <h4>Ares - $1,000</h5>
+      <ul>
+        <li>Exclusive meeting times with the team</li>
+        <li>Prominent logos on website, t-shirts, and presentations</li>
+      </ul>
+    <h4>Pathfinder - $500</h5>
+      <ul>
+        <li>Resume book containing resumes of all team members</li>
+        <li>Logo on website, t-shirts, and all official presentations</li>
+        <li>Monthly updates via email newsletter</li>
+      </ul>
+    <br/>
+    Each level includes the benefits of all lower levels. MRover is also willing to accomodate non-monetary donations.
+
+  </div>
 </div>

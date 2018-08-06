@@ -21,43 +21,21 @@ hideInHeader: false
     <br/>
     
     <p>Alternatively, we meet every Sunday at noon in 1012 FXB, so feel free to stop by and join us!</p>
-<!--
-    <div style="margin-top: 20px; display: flex; justify-content: center; text-align: center; ">
-      <form class="form-container" method="POST" action="https://formspree.io/rover.webmaster@umich.edu">
-        <input class="form-field" type="email" name="_replyto" placeholder="Email Address" />
-        <select class="form-field" name="Interest">
-          <option disabled selected value></option>
-          <option value="Mechanical">Volvo</option>
-          <option value="Software">Saab</option>
-          <option value="Electrical">Fiat</option>
-          <option value="Science">Audi</option>
-          
-        </select>
-        <input class="form-field" type="grad_year" name="grad_year" placeholder="Graduation Year" />
-        <textarea class="form-field" name="message" placeholder="Message"></textarea>
-
-        <input type="hidden" name="_subject" value="Rover Join Request" />
-        <input type="hidden" name="_format" value="plain" />
-
-        <button class="submit-button" type="submit">Send</button>
-      </form>
-    </div>
-  -->
   <!-- Form - style from https://www.sanwebe.com/2014/08/css-html-forms-designs -->
 
-  <div style="margin-top: 30px; display: flex; justify-content: center; text-align: center; " class="form-style-5">
+    <div style="margin-top: 30px; display: flex; justify-content: center; text-align: center; " class="form-style-5">
       <form method="POST" action="https://formspree.io/rover.webmaster@umich.edu" style="width: 100%;">
-          <legend>MRover Interest Form</legend>
+        <legend>MRover Interest Form</legend>
 
-          <div id="dual_input_container">
-            <input id="name" type="text" name="name" placeholder="Your Name" >
-            <input id="email" type="email" name="_replyto" placeholder="Email Adress">
-          </div>
+        <div id="dual_input_container">
+          <input id="name" type="text" name="name" placeholder="Your Name" >
+          <input id="email" type="email" name="_replyto" placeholder="Email Adress">
+        </div>
 
-          <input type="text" name="major" placeholder="Major">
-          <div style="display: flex; justify-content: space-between">
+        <input type="text" name="major" placeholder="Major">
+        <div style="display: flex; justify-content: space-between">
           <select id="interest" name="interest" style="margin-right: 4px">
-            <option disabled selected value>Area of Interest</option>
+            <option disabled selected value>Interest Area</option>
             <option value="Mechanical">Mechanical</option>
             <option value="Software">Software</option>
             <option value="Electrical">Electrical</option>
@@ -65,33 +43,13 @@ hideInHeader: false
           </select>
           <input type="text" name="grad year" placeholder="Graduation Year" style="margin-left: 4px"/>
         </div>
-          <textarea name="message" placeholder="About yourself..."></textarea>
-
-          <input type="hidden" name="_subject" value="Rover Join Request" />
-          <input type="hidden" name="_format" value="plain" />
-          <input type="submit" value="Apply" />
-        </form>
-        <!--
-    <form method="POST" action="https://formspree.io/rover.webmaster@umich.edu">
-      <input type="email" name="_replyto" placeholder="Email Address" style="width: 100%"/>
-      <select name="Interest">
-        <option disabled selected value></option>
-        <option value="Mechanical">Volvo</option>
-        <option value="Software">Saab</option>
-        <option value="Electrical">Fiat</option>
-        <option value="Science">Audi</option>
         
-      </select>
-      <input type="grad_year" name="grad_year" placeholder="Graduation Year" />
-      <textarea name="message" placeholder="Message"></textarea>
+        <textarea name="message" placeholder="About yourself..."></textarea>
 
-      <input type="hidden" name="_subject" value="Rover Join Request" />
-      <input type="hidden" name="_format" value="plain" />
-
-      <button type="submit">Send</button>
-    </form>
-    -->
-  </div>
-
+        <input type="hidden" name="_subject" value="Rover Join Request" />
+        <input type="hidden" name="_format" value="plain" />
+        <input type="submit" value="Apply" />
+      </form>
+    </div>
   </div>
 </div>

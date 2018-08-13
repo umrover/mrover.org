@@ -63,7 +63,7 @@ hideInHeader: true
   </div>
   <div class="separator"> </div>
   <div>
-    {% assign sorted = site.data.donors | sort: 'amount' | reverse %}
+    {% assign sorted = site.data.donors | sort: 'amount' %}
     {% for donor in sorted %}
       
       <h4>{{ donor.name }} </h4>

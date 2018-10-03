@@ -5,7 +5,7 @@
         <!-- assign sponsors = (site.sponsors | sort: 'level' | reverse)-->
         {% for sponsor in site.sponsors %}
             {% if sponsor.level >= 3 %}
-                <div style="max-width: 140px"class="tspo-container"> 
+                <div style="max-width: 180px"class="tspo-container"> 
                     <a href="{{sponsor.rurl}}" target="_blank"><img src="{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
                 </div>
             {% endif %}

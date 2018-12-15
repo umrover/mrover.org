@@ -54,4 +54,38 @@ Stylesheet: Sponsor Us Page Stylesheet
       margin: 10px auto 20px auto;
     }
   }
+  
+  .sponsor_us_wrapper {
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+    .left-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .button-hollow {
+      margin: 0px 0px 0px 30px;
+    }
+
+    @media (max-width: 550px) {
+      .left-container {
+        flex-direction: column;
+      }
+      .button-hollow {
+        margin: 15px 0px 0px 0px;
+      }
+
+    }
+
+    @extend .wrap;
+  }
+
+
 }

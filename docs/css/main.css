@@ -30,7 +30,7 @@ COLORS
     color: white;
     margin: 0; }
 
-.wrap {
+.wrap, .sponsor-us-page .sponsor_us_wrapper {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto; }
@@ -177,7 +177,7 @@ pre {
 /**
  * Clearfix
  */
-.wrapper:after, .social-media-wrapper:after, .home .join-donate-cta .wrap:after, .footer-col-wrapper:after {
+.wrapper:after, .social-media-wrapper:after, .home .join-donate-cta .wrap:after, .home .join-donate-cta .sponsor-us-page .sponsor_us_wrapper:after, .sponsor-us-page .home .join-donate-cta .sponsor_us_wrapper:after, .footer-col-wrapper:after {
   content: "";
   display: table;
   clear: both; }
@@ -292,7 +292,7 @@ Stylesheet: Home Page
     .home .row-container.one .text-content, .home .row-container.two .text-content, .home .row-container.three .text-content {
       display: table-header-group;
       margin: 0px 10px; } }
-  .home .row-container .wrap {
+  .home .row-container .wrap, .home .row-container .sponsor-us-page .sponsor_us_wrapper, .sponsor-us-page .home .row-container .sponsor_us_wrapper {
     display: table;
     max-width: 800px;
     width: 90%;
@@ -352,7 +352,7 @@ Stylesheet: Home Page
         width: 92%;
         float: none;
         margin: 0 auto; } }
-.home .join-donate-cta .wrap {
+.home .join-donate-cta .wrap, .home .join-donate-cta .sponsor-us-page .sponsor_us_wrapper, .sponsor-us-page .home .join-donate-cta .sponsor_us_wrapper {
   max-width: 900px;
   margin: 0 auto;
   clear: both; }
@@ -406,7 +406,7 @@ Stylesheet: Front Page Stylesheet
       padding-left: 60px; }
   .about-page .row-container.three {
     background-color: #bdc3c7; }
-  .about-page .row-container .wrap {
+  .about-page .row-container .wrap, .about-page .row-container .sponsor-us-page .sponsor_us_wrapper, .sponsor-us-page .about-page .row-container .sponsor_us_wrapper {
     display: table;
     max-width: 800px; }
   .about-page .row-container .row-content {
@@ -453,7 +453,7 @@ Stylesheet: Front Page Stylesheet
         width: 100%; } }
   .about-page .row-container .one-of-one-subrow {
     width: 100%; }
-.about-page .info-row-container .wrap {
+.about-page .info-row-container .wrap, .about-page .info-row-container .sponsor-us-page .sponsor_us_wrapper, .sponsor-us-page .about-page .info-row-container .sponsor_us_wrapper {
   max-width: 1300px; }
 .about-page .row-electrical {
   width: 50%; }
@@ -1164,3 +1164,22 @@ Stylesheet: Sponsor Us Page Stylesheet
     .sponsor-us-page .cta p {
       width: 100%;
       margin: 10px auto 20px auto; }
+  .sponsor-us-page .sponsor_us_wrapper {
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto; }
+    .sponsor-us-page .sponsor_us_wrapper .left-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row; }
+    .sponsor-us-page .sponsor_us_wrapper .button-hollow {
+      margin: 0px 0px 0px 30px; }
+    @media (max-width: 550px) {
+      .sponsor-us-page .sponsor_us_wrapper .left-container {
+        flex-direction: column; }
+      .sponsor-us-page .sponsor_us_wrapper .button-hollow {
+        margin: 15px 0px 0px 0px; } }

@@ -57,13 +57,13 @@ hideInHeader: true
     {% endfor %}
   </div>
 
-  <!-- Individual Donors-->
+  <!-- Donors-->
   <div class="section-divider">
-    <h3>Individual Donors</h3>
+    <h3>Donors</h3>
   </div>
   <div class="separator"> </div>
   <div>
-    {% assign sorted = site.data.donors | sort: 'amount' %}
+    {% assign sorted = site.data.donors | sort:'amount' | reverse %}
     {% for donor in sorted %}
       
       <h4>{{ donor.name }} </h4>

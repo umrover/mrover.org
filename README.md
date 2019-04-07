@@ -3,6 +3,8 @@
 
 [//]: # (TODO: Add a section that goes over the general process for making changes: pull, make change, test, build, push)
 
+[//]: # (TODO: Write documentation on how to update the favicon)
+
 
 # mrover.org
 The official website of the University of Michigan Mars Rover Team

@@ -61,7 +61,7 @@ Move `favicon.ico` to the `/mrover` folder.
 
 You may have to refresh the cache using `Ctrl-F5` (in Chrome) to see the favicon update.
 
-#Updating Background Pictures
+# Updating Background Pictures
 
 Replace the image with the correct name in `/mrover/css/images`.
 

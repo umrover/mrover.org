@@ -324,7 +324,7 @@ Stylesheet: Home Page
       background-image: url("images/whoweare.jpg");
       background-position: 50% 50%; }
     .home .row-container .block.two {
-      background-image: url("images/whatwedo.jpg"); }
+      background-image: url("images/rover-with-cones.jpg"); }
     .home .row-container .block.three {
       background-image: url("images/whereweare.jpg"); }
     @media (max-width: 768px) {
@@ -389,7 +389,7 @@ Author: Connor Krupp
 Stylesheet: Front Page Stylesheet
 ******************************************************************/
 .about-page .hero {
-  background-image: url("images/about-bg.jpg");
+  background-image: url("images/canyons.jpg");
   background-repeat: no-repeat;
   background-position: center 80%;
   background-size: cover; }
@@ -783,7 +783,7 @@ Stylesheet: Join Page Stylesheet
   text-align: center;
   padding-bottom: 30px; }
   .join-page .hero {
-    background-image: url("images/join-bg.jpg");
+    background-image: url("images/full-send-peace.jpg");
     background-repeat: no-repeat;
     background-position: center 45%;
     background-size: cover; }

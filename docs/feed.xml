@@ -4,10 +4,10 @@
     <title>University of Michigan Mars Rover Team</title>
     <description>The Michigan Mars Rover Team (MRover) competes in the annual University Rover Challenge.  In 2018, we placed 9th in the world and 3rd in the US.  Our mission is to inspire students to pursue space exploration and engineering.
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Sep 2019 17:32:29 -0400</pubDate>
-    <lastBuildDate>Sun, 01 Sep 2019 17:32:29 -0400</lastBuildDate>
+    <link>http://mrover.org/</link>
+    <atom:link href="http://mrover.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 01 Sep 2019 17:33:37 -0400</pubDate>
+    <lastBuildDate>Sun, 01 Sep 2019 17:33:37 -0400</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
   </channel>

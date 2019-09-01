@@ -11,12 +11,12 @@ hideInHeader: true
 
   <!-- Highest level sponsors-->
   <div class="section-divider">
-    <h3>Olympus Mons Sponsors</h3>
+    <h3>Platinum Sponsors</h3>
   </div>
 
   <div class="tspos">
     {% for sponsor in site.sponsors %}
-      {% if sponsor.level >= 3 %}
+      {% if sponsor.level >= 4 %}
         <div class="tspo-container"> 
           <a href="{{sponsor.rurl}}" target="_blank"><img src="../{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
           <!-- Note the '../' on the image src above is necessary here but not in the footer html because the footer is in the includes folder -->
@@ -27,7 +27,22 @@ hideInHeader: true
   
   <!-- Middle level sponsors-->
   <div class="section-divider">
-    <h3>Ares Sponsors</h3>
+    <h3>Gold Sponsors</h3>
+  </div>
+
+  <div class="tspos">
+    {% for sponsor in site.sponsors %}
+      {% if sponsor.level == 3 %}
+        <div class="tspo-container"> 
+          <a href="{{sponsor.rurl}}" target="_blank"><img src="../{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
+          <!-- Note the '../' on the image src above is necessary here but not in the footer html because the footer is in the includes folder -->
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="section-divider">
+    <h3>Silver Sponsors</h3>
   </div>
 
   <div class="tspos">
@@ -40,10 +55,10 @@ hideInHeader: true
       {% endif %}
     {% endfor %}
   </div>
-
+	
   <!-- Lowest level sponsors-->
   <div class="section-divider">
-    <h3>Pathfinder Sponsors</h3>
+    <h3>Bronze Sponsors</h3>
   </div>
 
   <div class="tspos">

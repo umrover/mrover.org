@@ -555,7 +555,8 @@ Stylesheet: Front Page Stylesheet
 
 .tspos {
   text-align: center;
-  width: 100%; }
+  margin: auto;
+  max-width: 800px; }
 
 .tspo-container {
   max-width: 200px;

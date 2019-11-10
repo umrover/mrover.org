@@ -130,8 +130,8 @@
 
 .tspos {
     text-align:center;
-    //margin:auto; //center
-    width: 100%;
+    margin:auto; //center
+    max-width: 800px; //change back to 100% if you want 4 sponsors per row
 }
 
 .tspo-container {

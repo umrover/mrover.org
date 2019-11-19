@@ -274,8 +274,8 @@ Edited 2019: Abigail Fox
 Stylesheet: Home Page
 ******************************************************************/
 .home .hero {
-  background-image: url("images/rover-with-cones.jpg");
-  background-position: 20% 58%;
+  background-image: url("images/hughey-horizon.jpg");
+  background-position: 20% 60%;
   background-repeat: no-repeat;
   background-size: cover; }
 .home .row-container {
@@ -365,9 +365,9 @@ Author: Connor Krupp
 Stylesheet: Contact Page Stylesheet
 ******************************************************************/
 .contact-page .hero {
-  background-image: url("images/rover-on-ridge.jpg");
+  background-image: url("images/paint-the-rock.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center 56%;
   background-size: cover; }
 .contact-page .contact-info {
   text-align: center;
@@ -390,9 +390,9 @@ Author: Connor Krupp
 Stylesheet: Front Page Stylesheet
 ******************************************************************/
 .about-page .hero {
-  background-image: url("images/canyons.jpg");
+  background-image: url("images/rover-on-ridge.jpg");
   background-repeat: no-repeat;
-  background-position: center 80%;
+  background-position: center 45%;
   background-size: cover; }
 .about-page .row-container {
   padding: 10px; }
@@ -787,7 +787,7 @@ Stylesheet: Join Page Stylesheet
   .join-page .hero {
     background-image: url("images/full-send-peace.jpg");
     background-repeat: no-repeat;
-    background-position: center 45%;
+    background-position: center 60%;
     background-size: cover; }
   .join-page h4 {
     font-size: 24px; }
@@ -928,7 +928,7 @@ Stylesheet: Home Page
   /* Fading animation */ }
   .rovers-page .hero {
     background-image: url("images/team-urc.JPG");
-    background-position: center 50%;
+    background-position: center 58.5%;
     background-repeat: no-repeat;
     background-size: cover; }
   .rovers-page .content-wrapper {
@@ -1140,9 +1140,9 @@ Stylesheet: Sponsor Us Page Stylesheet
   text-align: center;
   padding-bottom: 30px; }
   .sponsor-us-page .hero {
-    background-image: url("images/sponsor-us-bg.jpg");
+    background-image: url("images/canyons-and-sponsors.jpg");
     background-repeat: no-repeat;
-    background-position: center 56%;
+    background-position: center 65%;
     background-size: cover; }
   .sponsor-us-page h4 {
     font-size: 24px; }

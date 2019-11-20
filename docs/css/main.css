@@ -391,8 +391,8 @@ Stylesheet: Front Page Stylesheet
 ******************************************************************/
 .about-page .hero {
   background-image: url("images/rover-on-ridge.jpg");
+  background-position: center 20%;
   background-repeat: no-repeat;
-  background-position: center 41%;
   background-size: cover; }
 .about-page .row-container {
   padding: 10px; }

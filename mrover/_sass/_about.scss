@@ -8,7 +8,7 @@ Stylesheet: Front Page Stylesheet
   .hero {
     background-image: url("images/rover-on-ridge.jpg");
     background-repeat: no-repeat;
-    background-position: center 45%;
+    background-position: center 41%;
     background-size: cover;
   }
   .row-container {
@@ -81,6 +81,22 @@ Stylesheet: Front Page Stylesheet
         background-image: url('images/160x120.png');
         background-size: cover;
       }
+
+      &--2 {
+        @extend .info-section;
+        
+      }
+
+      &--3 {
+        @extend .info-section;
+        width: 33%;
+      }
+
+      &--4 {
+        @extend .info-section;
+        width: 25%;
+      }
+      
       //align subrow content vertically
       @media (max-width: 620px) {
         width: 100%;

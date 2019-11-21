@@ -82,19 +82,9 @@ Stylesheet: Front Page Stylesheet
         background-size: cover;
       }
 
-      &--2 {
+      &-full {
         @extend .info-section;
-        
-      }
-
-      &--3 {
-        @extend .info-section;
-        width: 33%;
-      }
-
-      &--4 {
-        @extend .info-section;
-        width: 25%;
+        width: 100%;
       }
       
       //align subrow content vertically
@@ -112,22 +102,40 @@ Stylesheet: Front Page Stylesheet
 
       padding: 0px;
       margin: 0px;
-
-    }
-
-    .one-of-two-subrows{
-      width: 50%;
-      
+  
+      &-2 {
+        @extend .subrow;
+        width: 100%;
+      }
+  
+      &-4 {
+        @extend .subrow;
+        width: 50%;
+      }
+  
       //align subrows vertically (but keep their content horizontal)
       @media (max-width: 1280px) {
         width: 100%;
       }
-    }
 
-    .one-of-one-subrow {
-      width: 100%;
+      &-3-left {
+        @extend .subrow;
+        width: 67%;
+        //align subrows vertically (but keep their content horizontal)
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+      }
+  
+      &-3-right {
+        @extend .subrow;
+        width: 33%;
+        //align subrows vertically (but keep their content horizontal)
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+      }
     }
-
   }
 
   .info-row-container {

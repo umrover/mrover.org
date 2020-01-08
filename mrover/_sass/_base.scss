@@ -1,6 +1,6 @@
 .hero {
    	background-color: $black;
-    height: 400px;
+    height: 440px;
 	.hero-content {
 		width: 90%;
 		max-width: 400px;
@@ -19,6 +19,7 @@
     @media(min-width: 1800px) {
         height: 600px;
     }
+    
 }
 
 .section-divider {

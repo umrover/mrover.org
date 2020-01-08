@@ -6,9 +6,9 @@ Stylesheet: Front Page Stylesheet
 
 .about-page {
   .hero {
-    background-image: url("images/canyons.jpg");
+    background-image: url("images/rover-on-ridge.jpg");
+    background-position: center 20%;
     background-repeat: no-repeat;
-    background-position: center 80%; //60% for image of 2017-2018 team
     background-size: cover;
   }
   .row-container {
@@ -81,6 +81,12 @@ Stylesheet: Front Page Stylesheet
         background-image: url('images/160x120.png');
         background-size: cover;
       }
+
+      &-full {
+        @extend .info-section;
+        width: 100%;
+      }
+      
       //align subrow content vertically
       @media (max-width: 620px) {
         width: 100%;
@@ -96,22 +102,40 @@ Stylesheet: Front Page Stylesheet
 
       padding: 0px;
       margin: 0px;
-
-    }
-
-    .one-of-two-subrows{
-      width: 50%;
-      
+  
+      &-2 {
+        @extend .subrow;
+        width: 100%;
+      }
+  
+      &-4 {
+        @extend .subrow;
+        width: 50%;
+      }
+  
       //align subrows vertically (but keep their content horizontal)
       @media (max-width: 1280px) {
         width: 100%;
       }
-    }
 
-    .one-of-one-subrow {
-      width: 100%;
+      &-3-left {
+        @extend .subrow;
+        width: 67%;
+        //align subrows vertically (but keep their content horizontal)
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+      }
+  
+      &-3-right {
+        @extend .subrow;
+        width: 33%;
+        //align subrows vertically (but keep their content horizontal)
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+      }
     }
-
   }
 
   .info-row-container {

@@ -6,15 +6,9 @@
 </description>
     <link>http://mrover.org/</link>
     <atom:link href="http://mrover.org/feed.xml" rel="self" type="application/rss+xml"/>
-<<<<<<< HEAD
-    <pubDate>Wed, 08 Jan 2020 15:28:48 -0500</pubDate>
-    <lastBuildDate>Wed, 08 Jan 2020 15:28:48 -0500</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
-=======
-    <pubDate>Mon, 25 Nov 2019 19:34:54 -0500</pubDate>
-    <lastBuildDate>Mon, 25 Nov 2019 19:34:54 -0500</lastBuildDate>
+    <pubDate>Sat, 25 Jan 2020 12:46:50 -0500</pubDate>
+    <lastBuildDate>Sat, 25 Jan 2020 12:46:50 -0500</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
->>>>>>> 10f88d695825eb8e6c3d66ff610a0ff94e81bc2b
     
   </channel>
 </rss>

@@ -12,16 +12,7 @@
   <!-- Note that this will still run when you are testing the site too, which could skew the analytics-->
   
   
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119482193-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-119482193-1');
-    </script>
-
+    <p style="text-align: center; position: absolute; width: 100%" > - Non-production Environment (No Google Analytics) - </p>
   
 
   <meta charset="utf-8">
@@ -32,8 +23,8 @@
   <meta name="description" content="">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="canonical" href="http://mrover.org/rovers/">
-  <link rel="alternate" type="application/rss+xml" title="University of Michigan Mars Rover Team" href="http://mrover.org/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/rovers/">
+  <link rel="alternate" type="application/rss+xml" title="University of Michigan Mars Rover Team" href="http://localhost:4000/feed.xml">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <!-- Should add different resolutions of the icon but actually breaks it
@@ -749,6 +740,32 @@ Our software this year was an improved version of the previous year's as well. W
                         </div>
                     </a>
                 
+                    <a class="tile" href="#content" id="2020" style="background-image: url('roverImages/2020/2020.jpg');">
+
+                        <span style="display: none" class="year">2020</span>
+                        <span style="display: none" class="name">Lucy</span>
+                        <span style="display: none" class="imageURL">roverImages/2020/2020.jpg</span>
+                        
+                        <span style="display: none" class="desc">This year, we focused our attention to the durability and reliability of our four-wheeled rover, while continuing our previous successes. We developed our mobility system with a carbon-fiber chassis to allow for a strong, lightweight foundation. We also revamped the system with more powerful brushless DC motors to climb steeper slopes, and a suspension that is optimized to better absorb impact on all the wheels. We continued our improvements from last year’s arm by developing an in-house cycloidal transmission, increasing end effector precision while reducing overall mass of the rover.</span>
+                        
+                        <span style="display: none" class="desc">Additionally, we completely overhauled the rover’s electrical system to support the mechanical and software updates, while giving us reliable communication and power. We developed our own 10-Series battery back to provide ample power to the rover. To ensure constant communication with the base station, we developed an autonomously deployable radio repeater for our long-range mission.</span>
+                        
+
+                        
+                        <span style="display: none" class="slide">roverImages/2020/2020.jpg</span>
+                        
+                        <span style="display: none" class="slide">roverImages/2020/outside-hills.jpg</span>
+                        
+
+                        <div class="tile-bg" ></div>
+                        <div class="tile-overlay">
+                            <div class="tile-text">
+                                <h1>2020</h1>
+                                <p>Lucy</p>
+                            </div>
+                        </div>
+                    </a>
+                
             </div>
         <!-- </div> -->
     </div>
@@ -906,10 +923,6 @@ $(document).ready(function(){
             
         
             
-        
-            
-        
-            
                 <div style="max-width: 180px"class="tspo-container"> 
                     <a href="https://meraki.cisco.com" target="_blank"><img src="../sponsorImages/cisco-meraki.png" alt="Cisco Meraki logo" class="tspo-logo" /></a>
                 </div>
@@ -918,15 +931,9 @@ $(document).ready(function(){
             
         
             
-        
-            
                 <div style="max-width: 180px"class="tspo-container"> 
                     <a href="http://www.engin.umich.edu/" target="_blank"><img src="../sponsorImages/coe.png" alt="College of Engineering logo" class="tspo-logo" /></a>
                 </div>
-            
-        
-            
-        
             
         
             
@@ -965,6 +972,8 @@ $(document).ready(function(){
                 <div style="max-width: 180px"class="tspo-container"> 
                     <a href="https://www.mispacegrant.org" target="_blank"><img src="../sponsorImages/msgc.png" alt="Michigan Space Grant Consortium logo" class="tspo-logo" /></a>
                 </div>
+            
+        
             
         
             

@@ -98,7 +98,7 @@ There are sponsorship information attributes in `.md` files:
     - 4 = platinum
     - 3 = gold
     - 2 = silver
-    - 1 = brone
+    - 1 = bronze
 
 #### Adding a sponsor
 Copy a `.md` file in `_sponsors/` and modify the information to reflect the new sponsor. Then put your sponsor logo in `sponsorImages/` and reflect the image's name in the `image_path` attribute of the `.md` file.

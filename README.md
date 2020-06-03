@@ -20,7 +20,7 @@ To test the site, simply navigate to the `/mrover` folder in a bash terminal and
 
     jekyll serve
 
-You can connect to the site by opening your browser and navigating to `localhost:4000`. Any changes that you save will automatically trigger jekyll to rebuild the site. You can see these changes by refreshing the page. Only you will be able to see this changes.
+You can connect to the site by opening your browser and navigating to `localhost:4000`. Any changes that you save will automatically trigger jekyll to rebuild the site. You can see these changes by refreshing the page. Only you will be able to see these changes.
 
 ### Building the site for production
 To build the site for production, navigate to the `/mrover` folder in a bash terminal and run

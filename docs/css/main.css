@@ -147,7 +147,7 @@ Stylesheet: Home Page
 
 .home .row-container .block.two { background-image: url("images/rover-with-cones.jpg"); }
 
-.home .row-container .block.three { background-image: url("images/whereweare.jpg"); }
+.home .row-container .block.three { background-image: url("images/pit.jpg"); }
 
 @media (max-width: 768px) { .home .row-container .block { display: block; margin: 30px auto; float: none; width: 300px; height: 187px; } }
 

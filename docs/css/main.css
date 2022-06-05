@@ -496,7 +496,7 @@ Stylesheet: Home Page
 ******************************************************************/
 .rovers-page { /* Next & previous buttons */ /* Position the "next button" to the right */ /* On hover, add a black background color with a little bit see-through */ /* Caption text */ /* Number text (1/3 etc) */ /* The dots/bullets/indicators */ /* Fading animation */ }
 
-.rovers-page .hero { background-image: url("images/hughey-horizon.jpg"); background-position: 20% 60%; background-repeat: no-repeat; background-size: cover; }
+.rovers-page .hero { background-image: url("images/rosie-horizon.jpg"); background-position: 20% 60%; background-repeat: no-repeat; background-size: cover; }
 
 .rovers-page .content-wrapper { display: flex; justify-content: center; }
 

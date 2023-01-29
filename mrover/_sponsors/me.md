@@ -2,5 +2,5 @@
 name: Umich Mechanical Engineering
 image_path: sponsorImages/me.png
 rurl: https://me.engin.umich.edu/
-level: 3
+level: 2
 ---

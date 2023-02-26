@@ -1,0 +1,35 @@
+/**
+ * Site header
+ */
+.site-header {
+    //border-top: 5px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
+    min-height: 56px;
+    padding: 20px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+    
+    .trigger a {
+        border-bottom: 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #323944;
+        margin-right: 20px;
+        
+        &:hover, &:focus {
+          color: #F8C726;
+          text-decoration: none;
+        }
+    }
+    
+    
+   .site-logo {
+        > svg {
+            display: inline-block;
+            width: 250px;
+            height: 63px;
+            vertical-align: middle;
+        }
+   }
+}

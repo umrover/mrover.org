@@ -1,0 +1,347 @@
+.hero {
+   	background-color: $black;
+    height: 440px;
+	.hero-content {
+		width: 90%;
+		max-width: 400px;
+		color: white;
+		padding: 80px 0;
+    }
+    
+    @media(max-width: 700px) {
+        height: 300px;
+    }
+
+    @media(min-width: 1400px) {
+        height: 500px;
+    }
+
+    @media(min-width: 1800px) {
+        height: 600px;
+    }
+    
+}
+
+.section-divider {
+	width: 100%;
+	background-color: $text-color;
+	text-align: center;
+	h3 {
+		font-size: 32px;
+		padding: 10px 0;
+		text-transform: uppercase;
+		color: white;
+		margin: 0;
+	}
+}
+
+.wrap {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $base-font-weight;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+.social-media-wrapper {
+
+    border-top: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
+    padding-top: $spacing-unit / 2;
+    padding-bottom: $spacing-unit / 2;
+
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: $spacing-unit / 1.75;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    @extend .wrapper;
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+%button-template {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: normal;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+
+  // hovering on the btn
+  &:hover, &:focus {
+    color: white;
+    text-decoration: none;
+    outline: none;
+  } // end hover
+
+  // clicking on the button
+  &:active {
+    top: 1px; // adds a tiny hop to the click
+  } // end active
+
+} // end .button
+
+.button-hollow {
+  @extend %button-template;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: darken(black, 4%);
+  } // end hover
+
+}
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+/**
+ * Font-awesome icons
+ */
+
+.fa {
+
+    color:inherit;
+    text-decoration: none;
+    
+}
+
+.fa-instagram {
+
+    border-radius: 8px;
+    background-color:rgba(0,0,0,0);
+
+    padding: 2px 5px 2px 5px;
+
+    &:hover{
+        background:radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);        
+        color:white;
+    }
+  
+}
+
+.fa-twitter {
+
+    &:hover{
+        color: #00aced;
+    }
+}
+
+.fa-youtube-play {
+
+    &:hover{
+        color: #bb0000;
+    }
+}

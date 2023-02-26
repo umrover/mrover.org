@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <!-- <h2 class="footer-heading">Our Sponsors</h2> -->
+    <!-- tspo used because adblock blocks the word sponsor-->
+    <div class="tspos" >
+        <!-- assign sponsors = (site.sponsors | sort: 'level' | reverse)-->
+        {% for sponsor in site.sponsors %}
+            {% if sponsor.level >= 4 %}
+                <div style="max-width: 180px"class="tspo-container"> 
+                    <a href="{{sponsor.rurl}}" target="_blank"><img src="{{base}}{{sponsor.image_path}}" alt="{{sponsor.name}} logo" class="tspo-logo" /></a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <br/>
+    <p style="text-align: center"><i><a href="/sponsors" style="color: inherit; text-align: center; font-size: 14pt"; > See All Sponsors</a></i><!-- &nbsp | &nbsp <i><a href="/contact" style="color: inherit; text-align: center; font-size: 14pt"; >Contact Us</a></i>--></p>
+</div>

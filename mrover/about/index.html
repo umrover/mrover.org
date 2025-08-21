@@ -25,13 +25,14 @@ weight: 1
         <ul>
           <li>Extreme Retrieval and Delivery - Traveling over tough terrain</li>
           <li>Equipment Servicing - Manipulating various pieces of equipment with the robotic arm</li>
-          <li>Science Cache - Acquiring soil from a chosen site and evaluating it for signs of life</li>
+          <li>Science - Acquiring soil from a chosen site and evaluating it for signs of life</li>
           <li>Autonomous Navigation - Driving to GPS coordinates and searching for markers nearby.</li>
         </ul>
 
         CIRC is hosted by the Canadian Space Technology Advancement Group and takes place in Drumheller, Alberta. The
-        competition consists of five events. Four are similar to the URC events and the fifth is a Search and Rescue
-        task.
+        competition consists of five events. Three are similar to the URC events with the fourth and fifth missions 
+        being an Environment Assessment task and a Search and Transport task respectively. In 2025, CIRC did not have
+        a specific Science mission.
 
 
       </div>
@@ -50,7 +51,7 @@ weight: 1
           <div class="info-block" style="background-image: url('ARM2022.jpg');"></div>
           <div class="info-content">
             <h4>Robotic Arm</h4>
-            The Robotic Arm subteam designs and builds a multiple degree-of-freedom robotic arm responsible for
+            The Robotic Arm subteam designs and builds a five degree-of-freedom robotic arm responsible for
             completing tasks in the "Equipment Servicing" and "Extreme Retrieval and Delivery" portions of the
             competition. The arm is able to lift objects, open drawers, push buttons, type on a keyboard, and accomplish
             other precise movements.
@@ -60,16 +61,14 @@ weight: 1
         <div class="info-section">
           <div class="info-block" style="background-image: url('ISH2022.jpg');"></div>
           <div class="info-content">
-            <h4>Instruments and Sample Handling</h4>
-            The Instrumentation and Sample Handling subteam designs the mechanisms that are used to conduct various
-            tests detecting
-            signs of life onboard the rover; additionally, the ISH sub-system sends information back to Astrobiology
-            members to effectively
-            analyze rock compositions and types.
-
+            <h4>Mobility</h4>
+            The Mobility subteam develops and builds the drive and suspension systems to
+            navigate through rocks and rough terrain in each competition mission. They work
+            to provide reliable driving and agile maneuvering, while also protecting sensitive
+            onboard equipment from impacts and vibration.
           </div>
         </div>
-      </div>
+        
       <div class="subrow-3-right">
         <div class="info-section-full">
           <div class="info-block" style="background-image: url('chassis2022.jpg');"></div>
@@ -87,29 +86,31 @@ weight: 1
   </div>
 
   <div class="section-divider">
-
+    <h3>Science-Mechanical</h3>
   </div>
   <div class="row-container info-row-container">
     <div class="wrap">
-      <div class="subrow-3-left">
+      <div class="subrow-2">
         <div class="info-section">
           <div class="info-block" style="background-image: url('Mobility2022.jpg');"></div>
           <div class="info-content">
-            <h4>Mobility</h4>
-            The Mobility subteam develops and builds the drive and suspension systems to
-            navigate through rocks and rough terrain in each competition mission. They work
-            to provide reliable driving and agile maneuvering, while also protecting sensitive
-            onboard equipment from impacts and vibration.
+            <h4>Science Payload Instrumentation</h4>
+            Science Payload Instrumentation subteam brings together our sensors and tests, 
+            performing in-situ sampling. Their science box is able to perform on-board science
+            and life-detection tests required for URC's Science Mission. The SPI system also has
+            sensors for sampling the surrounding environment and external cameras to analyze rock formations.
+            
           </div>
         </div>
 
         <div class="info-section">
           <div class="info-block" style="background-image: url('sa-scoop.png');"></div>
           <div class="info-content">
-            <h4>Sample Acquistion</h4>
+            <h4>Science Payload Acquisition</h4>
             The Sample Acquisition subteam focuses on developing and testing the mechanics of soil collection.
-            Previously, that has included a combination of an auger drill to extract the soil and mechanised scoop to
-            deliver soil to the ISH system.
+            In 2025, the sample acquisition system consisted of a linear actuator-driven sheathed auger 
+            collection system that drills into the ground, coring up to 10-cm deep, which then transports
+            soil samples upwards and into the SPI system.
           </div>
         </div>
       </div>
@@ -121,7 +122,7 @@ weight: 1
 
 
   <div class="section-divider">
-    <h3>Astrobiology</h3>
+    <h3>Science</h3>
   </div>
   <br>
   <p style="text-align:center;">
@@ -131,9 +132,9 @@ weight: 1
   <div class="info-section">
     <div class="wrap" style="max-width: 800px">
       <div class="info-content">
-        <p>The Astrobiology branch is responsible for developing tests to analyze soil and rock samples for signs of
+        <p>The Astrbiology team is responsible for developing tests to analyze soil and rock samples for signs of
           past or present life. They research different indicators of life, identify possible tests for those
-          indicators, and then work with the Instrumentation & Sample Handling subteam and others to make those tests
+          indicators, and then work with the Science Payload Instrumentation subteam and others to make those tests
           work in real-time onboard the rover for URC. And the Astrobiology team conducts the tests themselves at CIRC
           (where onboard testing is not required).</p>
       </div>
@@ -151,31 +152,22 @@ weight: 1
   </div>
   <div class="row-container info-row-container">
     <div class="wrap">
-      <div class="subrow-4">
+      <div class="subrow-3-left">
         <div class="info-section">
           <div class="info-block" style="background-image: url('Auton2022.jpg');"></div>
           <div class="info-content">
             <h4>Autonomy</h4>
-            The Autonomy subteam develops high-level, abstracted code that allows the rover to traverse
-            desert terrain and reach desired waypoints, avoid obstacles, and search for field markers. They also work
-            closely with the Perception team and employ GPS, magnetometers, IMUs, and other sensors to achieve the
-            goals of autonomous traversal. Our Navigation subteam falls within Autonomy.
+            Our Autonomy team is further divided into 3 more subteams: Navigation, Perception, and Localization.
+            Navigation plans and executes a path for the rover to search an area while avoiding obstacles.
+            Perception identifies key features of the environment (objective markers) and obstacles in the path.
+            The rover’s navigation system uses A* to path plan around obstacles for the autonomy mission. 
+            The cost map grid is periodically centered on the rover to support obstacle avoidance over longer
+            distances without needing a larger grid. Recent autonomy projects include working on integrating 
+            inverse kinematics onto our rover's robotic arm.
 
 
           </div>
         </div>
-        <div class="info-section">
-          <div class="info-block" style="background-image: url('percep.gif');"></div>
-          <div class="info-content">
-            <h4>Perception</h4>
-            The Perception subteam develops code to process information about the environment
-            around the rover, gathered from a variety of onboard sensors and cameras.
-            This subteam works closely with Autonomous Navigation, providing them with useful information,
-            which allows the rover to effectively traverse the course.
-          </div>
-        </div>
-      </div>
-      <div class="subrow-4">
         <div class="info-section">
           <div class="info-block" style="background-image: url('IK2022.gif');"></div>
           <div class="info-content">
@@ -231,7 +223,7 @@ weight: 1
             <h4>Embedded Hardware</h4>
             The Embedded Hardware Handling subteam works on controlling actuators, receiving signals from sensors, and
             managing data connections from the electronics box to external components. They design custom printed
-            circuit boards for sensor interfacing and motor control.
+            circuit boards for power distribution, sensor interfacing and motor control.
 
           </div>
         </div>
@@ -258,9 +250,9 @@ weight: 1
       <div class="row-content text-content">
         <p>
           The business team organizes corporate sponsorships, grants and other fundraising
-          opportunities, such as Giving Blueday, for MRover. The business team is also
-          responsible for keeping the team website up to date and setting up recruitment and community outreach events.
-          Many members of the business team are also members of other subteams.
+          opportunities, such as Giving Blueday, for MRover. They are also responsible for creating team merchandise 
+          each semester. The business team keeps the team website up to date and set up recruitment and community outreach events.
+          Most members of the business team are also members of other subteams!
         </p>
       </div>
 

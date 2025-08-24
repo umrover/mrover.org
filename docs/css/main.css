@@ -385,18 +385,19 @@ Stylesheet: Home Page
 }
 .home .row-container .block {
   width: 320px;
-  height: 200px;
   background-color: #2c3e50;
   background-size: cover;
 }
 .home .row-container .block.one {
-  background-image: url("images/M.jpg");
+  height: 350px;
+  background-image: url("images/SAR_GOBLUESHOT.png");
   background-position: 50% 50%;
 }
 .home .row-container .block.two {
   background-image: url("images/rover-with-cones.jpg");
 }
 .home .row-container .block.three {
+  height: 200px;
   background-image: url("images/pit.jpg");
 }
 @media (max-width: 768px) {
@@ -520,20 +521,20 @@ Stylesheet: Front Page Stylesheet
   height: 200px;
   background-color: #2c3e50;
 }
-.about-page .row-container .info-section, .about-page .row-container .subrow, .about-page .row-container .subrow-3-right, .about-page .row-container .subrow-3-left, .about-page .row-container .subrow-4, .about-page .row-container .subrow-2, .about-page .row-container .info-section-full {
+.about-page .row-container .info-section, .about-page .row-container .subrow, .about-page .row-container .subrow-5, .about-page .row-container .subrow-3-right, .about-page .row-container .subrow-3-left, .about-page .row-container .subrow-4, .about-page .row-container .subrow-2, .about-page .row-container .info-section-full {
   width: 50%;
   text-align: center;
   float: left;
   padding: 30px 0;
 }
-.about-page .row-container .info-section h4, .about-page .row-container .subrow h4, .about-page .row-container .subrow-3-right h4, .about-page .row-container .subrow-3-left h4, .about-page .row-container .subrow-4 h4, .about-page .row-container .subrow-2 h4, .about-page .row-container .info-section-full h4 {
+.about-page .row-container .info-section h4, .about-page .row-container .subrow h4, .about-page .row-container .subrow-5 h4, .about-page .row-container .subrow-3-right h4, .about-page .row-container .subrow-3-left h4, .about-page .row-container .subrow-4 h4, .about-page .row-container .subrow-2 h4, .about-page .row-container .info-section-full h4 {
   font-size: 1.1em;
   font-weight: 700;
 }
-.about-page .row-container .info-section .info-content, .about-page .row-container .subrow .info-content, .about-page .row-container .subrow-3-right .info-content, .about-page .row-container .subrow-3-left .info-content, .about-page .row-container .subrow-4 .info-content, .about-page .row-container .subrow-2 .info-content, .about-page .row-container .info-section-full .info-content {
+.about-page .row-container .info-section .info-content, .about-page .row-container .subrow .info-content, .about-page .row-container .subrow-5 .info-content, .about-page .row-container .subrow-3-right .info-content, .about-page .row-container .subrow-3-left .info-content, .about-page .row-container .subrow-4 .info-content, .about-page .row-container .subrow-2 .info-content, .about-page .row-container .info-section-full .info-content {
   padding: 10px 30px;
 }
-.about-page .row-container .info-section .info-block, .about-page .row-container .subrow .info-block, .about-page .row-container .subrow-3-right .info-block, .about-page .row-container .subrow-3-left .info-block, .about-page .row-container .subrow-4 .info-block, .about-page .row-container .subrow-2 .info-block, .about-page .row-container .info-section-full .info-block {
+.about-page .row-container .info-section .info-block, .about-page .row-container .subrow .info-block, .about-page .row-container .subrow-5 .info-block, .about-page .row-container .subrow-3-right .info-block, .about-page .row-container .subrow-3-left .info-block, .about-page .row-container .subrow-4 .info-block, .about-page .row-container .subrow-2 .info-block, .about-page .row-container .info-section-full .info-block {
   margin: 0 auto;
   width: 160px;
   height: 120px;
@@ -545,11 +546,11 @@ Stylesheet: Front Page Stylesheet
   width: 100%;
 }
 @media (max-width: 620px) {
-  .about-page .row-container .info-section, .about-page .row-container .subrow, .about-page .row-container .subrow-3-right, .about-page .row-container .subrow-3-left, .about-page .row-container .subrow-4, .about-page .row-container .subrow-2, .about-page .row-container .info-section-full {
+  .about-page .row-container .info-section, .about-page .row-container .subrow, .about-page .row-container .subrow-5, .about-page .row-container .subrow-3-right, .about-page .row-container .subrow-3-left, .about-page .row-container .subrow-4, .about-page .row-container .subrow-2, .about-page .row-container .info-section-full {
     width: 100%;
   }
 }
-.about-page .row-container .subrow, .about-page .row-container .subrow-3-right, .about-page .row-container .subrow-3-left, .about-page .row-container .subrow-4, .about-page .row-container .subrow-2 {
+.about-page .row-container .subrow, .about-page .row-container .subrow-5, .about-page .row-container .subrow-3-right, .about-page .row-container .subrow-3-left, .about-page .row-container .subrow-4, .about-page .row-container .subrow-2 {
   text-align: center;
   float: left;
   width: 50%;
@@ -560,10 +561,10 @@ Stylesheet: Front Page Stylesheet
   width: 100%;
 }
 .about-page .row-container .subrow-4 {
-  width: 50%;
+  width: 100%;
 }
 @media (max-width: 1280px) {
-  .about-page .row-container .subrow, .about-page .row-container .subrow-3-right, .about-page .row-container .subrow-3-left, .about-page .row-container .subrow-4, .about-page .row-container .subrow-2 {
+  .about-page .row-container .subrow, .about-page .row-container .subrow-5, .about-page .row-container .subrow-3-right, .about-page .row-container .subrow-3-left, .about-page .row-container .subrow-4, .about-page .row-container .subrow-2 {
     width: 100%;
   }
 }
@@ -583,7 +584,15 @@ Stylesheet: Front Page Stylesheet
     width: 100%;
   }
 }
-.about-page .info-row-container .wrap, .about-page .info-row-container .sponsor-us-page .sponsor_us_wrapper, .sponsor-us-page .about-page .info-row-container .sponsor_us_wrapper {
+.about-page .row-container .subrow-5 {
+  width: 200%;
+}
+@media (max-width: 1000px) {
+  .about-page .row-container .subrow-5 {
+    width: 100%;
+  }
+}
+.about-page .row-container .wrap, .about-page .row-container .sponsor-us-page .sponsor_us_wrapper, .sponsor-us-page .about-page .row-container .sponsor_us_wrapper {
   max-width: 1300px;
 }
 .about-page .row-electrical {

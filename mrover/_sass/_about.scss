@@ -110,7 +110,7 @@ Stylesheet: Front Page Stylesheet
   
       &-4 {
         @extend .subrow;
-        width: 50%;
+        width: 100%;
       }
   
       //align subrows vertically (but keep their content horizontal)
@@ -135,10 +135,18 @@ Stylesheet: Front Page Stylesheet
           width: 100%;
         }
       }
+
+      &-5 {
+        @extend .subrow;
+        width: 200%;
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+      }
     }
   }
 
-  .info-row-container {
+  .row-container {
     .wrap {
       max-width: $content-width + 100;
     }
